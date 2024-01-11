@@ -1,0 +1,332 @@
+.main {
+    display: flex;
+
+}
+
+.heading {
+    width: 55%;
+    padding: 70px;
+}
+
+.heading h3 {
+    font-weight: 500;
+    line-height: 0.5;
+    color: #f78077;
+    font-size: 43px;
+}
+
+.heading h4 {
+
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #3e4041;
+    margin-bottom: 20px;
+}
+
+.heading h5 {
+    color: #f78077;
+    font-weight: 500;
+    font-size: 21px;
+}
+
+.knowmore {
+    margin-right: 30px;
+    background: #00a5ec 0 0 no-repeat padding-box;
+    border: none;
+    padding: 12px 52px;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 4px;
+}
+
+
+.big-img {
+    margin-top: 7px;
+    width: 45%;
+}
+
+.big-img img {
+    height: 100%;
+    width: 100%;
+}
+
+.brand {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.brand img {
+    height: 57px;
+}
+
+/*==================================coding=Journey==============*/
+.coding-journey {
+    display: flex;
+    background-color: #f8fafa;
+    margin-top: 10vh;
+
+}
+
+.code-jrny-right {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+
+/*=======================ALLL BOXES=================*/
+
+.boxx {
+    display: flex;
+    border: 1px solid red;
+    justify-content: space-evenly
+}
+
+.boxone {
+    width: 45%;
+}
+
+
+
+.box1 {
+    background: rgb(253, 240, 215);
+    border: 1px dashed rgb(247, 128, 119);
+    box-shadow: 0 3px 25px rgba(0, 0, 0, .10196078431372549);
+    border-radius: 5px;
+    justify-content: center;
+    width: 250px;
+    display: flex;
+}
+
+.box1 p {
+    margin-left: 20px;
+    padding: 20px 0px;
+    font-weight: 500;
+    width: 80%;
+    color: rgb(247, 128, 119);
+
+}
+
+.box1 img {
+    margin-left: -30px;
+}
+
+.ONE {
+    color: rgb(247, 128, 119);
+}
+
+.TWO {
+    color: rgb(253, 205, 6);
+}
+
+.THREE {
+    color: rgb(15, 181, 130);
+}
+
+.FOUR {
+    color: rgb(240, 119, 149)
+}
+
+.arrow-right {
+    position: relative;
+    border: 2px solid green;
+    top: 27vh;
+}
+
+.arrow-left {
+    position: relative;
+    border: 2px solid green;
+    top: 27vh;
+    left: 15vh;
+}
+
+.box2 {
+    background: rgb(255, 249, 228);
+    border: 1px dashed rgb(253, 205, 6);
+}
+
+.box2 p {
+    color: rgb(253, 205, 6);
+}
+
+.box3 {
+    background: rgb(228, 246, 241);
+    border: 1px dashed rgb(15, 181, 130);
+
+}
+
+.box3 p {
+    color: rgb(15, 181, 130);
+}
+
+/*=======================COURSE BUY===============
+============================================*/
+
+.course-buy {
+    border: 2px solid blue;
+    height: 93vh;
+}
+
+.course-buy h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.course-purchase {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cards {
+    background: #fff;
+    -webkit-box-shadow: 0 3px 32px rgba(0, 0, 0, .10196078431372549);
+    box-shadow: 0 3px 32px rgba(0, 0, 0, .10196078431372549);
+    border-radius: 8px 8px 8px 8px;
+    position: absolute;
+    z-index: 10;
+    height: 55vh;
+    padding: 0 1em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.cardMain {
+    border: 2px solid red;
+    height: 56vh;
+    position: relative;
+    width: 17em;
+    top: 9vh;
+}
+
+.cardMain:hover {
+    box-shadow: 0 15px 32px rgba(12, 12, 12, 0.602);
+}
+
+.sect1 {
+    height: 25vh;
+    position: absolute;
+    z-index: -2;
+    top: -8vh;
+    width: 20vw;
+}
+
+.sect1a {
+    width: 95%;
+    height: 25vh;
+    z-index: 10;
+
+}
+
+.S1 {
+    color: rgb(0, 165, 236);
+    margin: 30px;
+    font-size: 18px;
+}
+
+.S2 {
+    color: rgb(240, 119, 149);
+    margin: 30px;
+    font-size: 18px;
+}
+
+.S3 {
+    color: rgb(15, 181, 130);
+    margin: 30px;
+    font-size: 18px;
+}
+
+.circle {
+    position: absolute;
+    background: #fff;
+    -webkit-box-shadow: 0 3px 32px rgba(0, 0, 0, .1607843137254902);
+    box-shadow: 0 3px 32px rgba(0, 0, 0, .1607843137254902);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    bottom: -25px;
+    left: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*==========================GRID CONTAINER DESIGN--------------------
+------------------------------------------*/
+.grid-main-container {
+    display: flex;
+    justify-content: space-around;
+    background-color: #ebecec;
+    min-height: 50vh;
+}
+
+.grid-container-left {
+    width: 35%;
+    border: 2px solid red;
+}
+
+.grid-container-left h2 {
+    color: #3e4041;
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.grid-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 5vh;
+}
+
+.grid-l {
+    height: 14vh;
+    width: 34vw;
+    background-color: white;
+    box-shadow: 0 3px 25px rgba(0, 0, 0, .10196078431372549);
+    border-radius: 5px;
+}
+
+.grid-l img {
+    position: absolute;
+    height: 10vh;
+    margin-left: -30px;
+}
+
+.grid-l p {
+    font-size: 16px;
+    width: 75%;
+    margin-left: 5vw;
+    color: #707070;
+    line-height: 1.6;
+}
+
+/*------------------------grid right container---------------*/
+.grid-container-right {
+    display: flex;
+    border: 2px solid rgb(0, 255, 0);
+    width: 45%;
+}
+
+.grid-right-2 {
+    display: flex;
+    flex-direction: column;
+}
+
+/* .grid-right {
+    border: 2px solid rgb(5, 43, 10);
+} */
+
+.grid-right img {
+    height: 300px;
+    width: 100%;
+}
+
+#grid-r1 {
+    position: relative;
+    top: 20vh;
+    height: 280px;
+}
