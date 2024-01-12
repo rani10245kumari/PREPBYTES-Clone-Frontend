@@ -26,7 +26,63 @@ function MockTest() {
                 <h2>PAST MOCK TEST</h2>
                 <div className='feattured-mock-test'>
 
+                    {data.filter((item) => item.testCategory === "FeaturedMock").map(item => {
+                        return (
+                            // <div className='item-container' onClick={() => Navigate(`/product/${item.id}`)}>
+                            <div className='mock1'>
+                                <img src={item.testImg} alt='#' className='image-mock' />
+
+                                <h4>{item.testTitle}</h4>
+                                <div className='mock-details'>
+                                    <div className='mock-d'>
+                                        <p>{item.testDate}</p>
+                                        <p>Date</p>
+                                    </div>
+                                    <div className='mock-d'>
+                                        <p>{item.testParticipants}</p>
+                                        <p>Participants</p>
+                                    </div>
+                                    <div className='mock-d'>
+                                        <p>{item.testDurition}</p>
+                                        <p>Duration</p>
+                                    </div>
+                                </div>
+                                <p>${item.testPrice}</p>
+                                <button>Buy Now</button>
+                            </div>
+                        )
+                    })}
+                </div>
+            </div>
+            {/*------------topic wise mock test-------------------------
+            --------------------------------------*/}
+            <div className='featured-mock'>
+                <p>Featured Mock Tests</p>
+                <h2>PAST MOCK TEST</h2>
+                <div className='feattured-mock-test'>
+
                     {data.filter((item) => item.testCategory === "TopicWise").map(item => {
+                        return (
+                            // <div className='item-container' onClick={() => Navigate(`/product/${item.id}`)}>
+                            <div className='mock1'>
+                                <img src={item.testImg} alt='#' className='image-mock' />
+
+                                <h4>{item.testTitle}</h4>
+
+                                <span>${item.testPrice}</span>
+                            </div>
+                        )
+                    })}
+                </div>
+            </div>
+            {/*=====================company wise mock test=======
+            ===================================================*/}
+            <div className='featured-mock'>
+                <p>Featured Mock Tests</p>
+                <h2>PAST MOCK TEST</h2>
+                <div className='feattured-mock-test'>
+
+                    {data.filter((item) => item.testCategory === "CompanyWise").map(item => {
                         return (
                             // <div className='item-container' onClick={() => Navigate(`/product/${item.id}`)}>
                             <div className='mock1'>
