@@ -1,0 +1,48 @@
+.upper-content {
+    background: transparent linear-gradient(180deg, #3969ad, #1d3557) 0 0 no-repeat padding-box;
+    color: white;
+    height: 30vh;
+    padding: 30px;
+    font-family: sans-serif;
+    font-size: 24px;
+}
+
+.upper-content p {
+    width: 55%;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+.featured-mock P {
+    color: #22559c;
+    font-size: 28px;
+}
+
+.featured-mock h2 {
+    text-align: center;
+    color: #ffa000;
+    font-weight: 500;
+    font-size: 18px;
+    /* position: relative;
+    margin: 15px 0 40px; */
+
+}
+
+.feattured-mock-test {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    min-height: 50vh;
+    gap: 2vw;
+    flex-wrap: wrap;
+}
+
+.mock1 {
+    width: 25vw;
+    border: 2px solid red;
+}
+
+.image-mock {
+    height: 10vh;
+    width: 20vw;
+}

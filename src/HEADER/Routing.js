@@ -13,7 +13,7 @@ function Routing() {
         <div>
 
             <Routes>
-                <Route path='/' element={Home}></Route>
+                <Route path='/' element={<Home></Home>}></Route>
                 <Route path='/header' element={<Header></Header>}></Route>
                 <Route path='/login' element={<Login></Login>}></Route>
                 <Route path='/signup' element={<Signup></Signup>}></Route>
