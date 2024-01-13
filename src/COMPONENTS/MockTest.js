@@ -30,6 +30,10 @@ function MockTest() {
                         return (
                             // <div className='item-container' onClick={() => Navigate(`/product/${item.id}`)}>
                             <div className='mock1'>
+                                <div className='mock-icon'>
+                                    <img src='/images/mock-test-left-icon.svg' alt='#'></img>
+                                    <img src='/images/mock-test-right-icon.svg' alt='#'></img>
+                                </div>
                                 <img src={item.testImg} alt='#' className='image-mock' />
 
                                 <h4>{item.testTitle}</h4>
@@ -47,8 +51,8 @@ function MockTest() {
                                         <p>Duration</p>
                                     </div>
                                 </div>
-                                <p>${item.testPrice}</p>
-                                <button>Buy Now</button>
+                                <h5 className='pp'>${item.testPrice}</h5>
+                                <button className='buynow'>Buy Now</button>
                             </div>
                         )
                     })}
@@ -68,8 +72,11 @@ function MockTest() {
                                 <img src={item.testImg} alt='#' className='image-mock' />
 
                                 <h4>{item.testTitle}</h4>
+                                <div className='mock-details'>
 
-                                <span>${item.testPrice}</span>
+                                </div>
+                                <h5 className='pp'>${item.testPrice}</h5>
+                                <button className='buynow'>Buy Now</button>
                             </div>
                         )
                     })}
@@ -85,12 +92,14 @@ function MockTest() {
                     {data.filter((item) => item.testCategory === "CompanyWise").map(item => {
                         return (
                             // <div className='item-container' onClick={() => Navigate(`/product/${item.id}`)}>
-                            <div className='mock1'>
-                                <img src={item.testImg} alt='#' className='image-mock' />
+                            <div className='companywise'>
+
+                                <img src={item.testImg} alt='#' className='image-m' />
 
                                 <h4>{item.testTitle}</h4>
 
-                                <span>${item.testPrice}</span>
+                                <h5 className='pp'>${item.testPrice}</h5>
+                                <button className='buynow'>Buy Now</button>
                             </div>
                         )
                     })}

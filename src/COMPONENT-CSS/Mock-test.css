@@ -48,15 +48,26 @@
     text-align: center;
 }
 
+.mock-icon {
+    display: flex;
+    justify-content: space-between;
+    padding: 7px;
+}
+
 .image-mock {
     height: 10vh;
     width: 20vw;
 }
 
+.image-m {
+    height: 10vh;
+    width: 13vw;
+}
+
 .mock1 h4 {
     color: #3969ad;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 17px;
 }
 
 .mock-details {
@@ -73,4 +84,34 @@
 .mock-d {
     display: flex;
     flex-direction: column;
+
+}
+
+.pp {
+    font-size: 16px;
+    color: blueviolet;
+}
+
+.buynow {
+    background: #22559c;
+    box-shadow: 0 3px 6px rgba(95, 141, 196, .2);
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 11px 33.7px;
+    font-size: 16px;
+    color: #fff;
+    margin: 10px 0;
+    text-decoration: none;
+    border: none;
+}
+
+.companywise {
+    width: 11em;
+    padding: 15px;
+    background: transparent linear-gradient(180deg, #ffe4b6, #fff 54%, #fff) 0 0 no-repeat padding-box;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(95, 141, 196, .2);
+    border-radius: 5px;
+    color: #707070;
+    margin: 15px;
 }
