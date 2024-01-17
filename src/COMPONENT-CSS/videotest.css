@@ -1,3 +1,7 @@
+.main-container {
+    background-color: #f8fafa;
+}
+
 .video-top {
     background: #d9f5f9 0 0 no-repeat padding-box;
     min-height: 300px;
@@ -47,10 +51,39 @@
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    gap: 5vw;
+
 
 }
 
 .flex-item {
-    width: 20vw;
     border: 2px solid green;
+    width: 25vw;
+    min-height: 400px;
+    background: #fff 0 0 no-repeat padding-box;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .11372549019607843);
+    position: relative;
+    border-radius: 10px;
+}
+
+.flex-item img {
+    width: 94%;
+    height: 35vh;
+    padding: 3%;
+    border-radius: 15px;
+}
+
+.flex-item h4 {
+    color: #424242;
+    font-weight: 500;
+    font-size: 18px;
+    padding-left: 20px;
+}
+
+.flex-item h5 {
+    margin-top: 7px;
+    font-size: 14px;
+    color: #858585;
+    letter-spacing: .5px;
+    padding-left: 20px;
 }

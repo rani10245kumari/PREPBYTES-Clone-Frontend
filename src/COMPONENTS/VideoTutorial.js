@@ -12,7 +12,7 @@ function VideoTutorial() {
     })
     console.log(data)
     return (
-        <div>
+        <div className='main-container'>
             <div className='video-top'>
                 <div className='video-left'>
                     <h4>Prepbytes Video Library</h4>
