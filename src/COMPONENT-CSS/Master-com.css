@@ -133,7 +133,7 @@
     flex-direction: column;
     align-items: center;
     margin: 3rem auto;
-    width: 90%;
+    width: 99%;
     border: 2px solid black;
 }
 
@@ -150,4 +150,76 @@
     color: #151414;
     /* margin: 1rem 0rem;
     margin-bottom: 2rem; */
+}
+
+/*==============mentor==============*/
+.mentor-main {
+    display: flex;
+    justify-content: space-around;
+    gap: 3vw;
+}
+
+.mentor-sub {
+    /* height: 20vh; */
+    border: 2px solid red;
+    width: 26vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2vw;
+    background-color: rgb(247, 246, 246);
+
+}
+
+.mentr {
+    height: 16vh;
+    width: 7.5vw;
+
+}
+
+
+
+.descriptn h3 {
+    color: #000;
+    font: normal normal 600 1.1rem/1.25rem Inter;
+}
+
+.descriptn p {
+    font-size: 18px;
+}
+
+.company {
+    height: 6vh;
+}
+
+/*==============================container-4------------------
+-----------------------------------------*/
+.container4 {
+    border: 2px solid green;
+}
+
+.container4 h5 {
+    width: 100%;
+    text-align: center;
+    color: #151414;
+    margin-bottom: 1rem;
+    font: normal normal 500 1.75rem/2rem Inter;
+}
+
+.contain4-sub {
+    border: 2px solid rgb(219, 127, 143);
+    display: flex;
+
+    justify-content: space-evenly;
+}
+
+.cont4 {
+    border: 1px solid rebeccapurple;
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+}
+
+.C4-1 {
+    display: flex;
 }
