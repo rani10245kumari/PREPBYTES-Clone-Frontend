@@ -7,9 +7,10 @@ function VideoTutorial() {
     const [data, setData] = useState([])
 
     useEffect(() => {
-        axios.get("https://prepbytes-clone-backend-mehz.onrender.com/video").then(response => { setData(response.data) })
+        axios.get("http://localhost:5000/pages/videodatafind")
+            .then(response => { setData(response.data) })
 
-    })
+    }, [])
     console.log(data)
     return (
         <div className='main-container'>
@@ -30,7 +31,8 @@ function VideoTutorial() {
             <h3 className='category'>CATEGORIES</h3>
 
             <div className='v-tutorial'>
-                {data.filter((item) => item.videoCount === "30").map(item => {
+                {data.filter((item) => item.videoCount === 30).map(item => {
+                    console.log(typeof (item.videoCount))
                     return (
                         <div >
                             {/* <div className='item-container' onClick={() => Navigate(`/product/${item.id}`)}> */}

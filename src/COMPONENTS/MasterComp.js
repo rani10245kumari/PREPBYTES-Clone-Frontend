@@ -77,75 +77,191 @@ function MasterComp() {
                 <div className='contain4-sub'>
                     <div className='cont4'>
                         <div className='C4-1'>
-                            <div>
+                            <div className='bb'>
                                 <h4>Personalised Program</h4>
                                 <p>Master your skills from where you are,
                                     with India's only personalised program</p>
                             </div>
-                            <img src='/images/tb-1.webp' alt='#'></img>
+                            <div className='cir'>
+                                <img src='/images/tb-1.webp' alt='#'></img>
+                            </div>
                         </div>
                         <div className='C4-1'>
-                            <div>
+                            <div className='bb'>
                                 <h4>Quick Doubt Support</h4>
                                 <p>Get your doubts cleared by coding
                                     experts and have a smooth learning</p>
                             </div>
-                            <img src='/images/tb-2.webp' alt='#'></img>
+                            <div className='cir'>
+                                <img src='/images/tb-2.webp' alt='#'></img>
+                            </div>
                         </div>
                         <div className='C4-1'>
-                            <div>
+                            <div className='bb'>
                                 <h4>Personalised Program</h4>
                                 <p>Master your skills from where you are,
                                     with India's only personalised program</p>
                             </div>
-                            <img src='/images/tb-3.webp' alt='#'></img>
+                            <div className='cir'>
+                                <img src='/images/tb-3.webp' alt='#'></img>
+                            </div>
                         </div>
                         <div className='C4-1'>
-                            <div>
+                            <div className='bb'>
                                 <h4>Personalised Program</h4>
                                 <p>Master your skills from where you are,
                                     with India's only personalised program</p>
                             </div>
-                            <img src='/images/tb-4.webp' alt='#'></img>
+                            <div className='cir'>
+                                <img src='/images/tb-4.webp' alt='#'></img>
+                            </div>
                         </div>
                     </div>
                     <div className='cont4'>
 
-                        <img src='/images/MASTER-BIG.svg' alt='#'></img>
+                        <img src='/images/MASTER-BIG.svg' alt='#' className='middle-img'></img>
 
                     </div>
                     <div className='cont4'>
                         <div className='C4-2'>
+                            <div className='cir2'>
+                                <img src='/images/tb-5.webp' alt='#'></img>
+                            </div>
                             <div>
                                 <h4>Personalised Program</h4>
                                 <p>Master your skills from where you are,
                                     with India's only personalised program</p>
                             </div>
-                            <img src='/images/tb-5.webp' alt='#'></img>
+
                         </div>
                         <div className='C4-2'>
+                            <div className='cir2'>
+                                <img src='/images/tb-6.webp' alt='#'></img>
+                            </div>
                             <div>
                                 <h4>Personalised Program</h4>
                                 <p>Master your skills from where you are,
                                     with India's only personalised program</p>
                             </div>
-                            <img src='/images/tb-6.webp' alt='#'></img>
+
                         </div>
                         <div className='C4-2'>
+                            <div className='cir2'>
+                                <img src='/images/tb-7.webp' alt='#'></img>
+                            </div>
                             <div>
                                 <h4>Personalised Program</h4>
                                 <p>Master your skills from where you are,
                                     with India's only personalised program</p>
                             </div>
-                            <img src='/images/tb-7.webp' alt='#'></img>
                         </div>
-                        <div className='C4-1'>
+                        <div className='C4-2'>
+                            <div className='cir2'>
+                                <img src='/images/tb-5.webp' alt='#'></img>
+                            </div>
                             <div>
                                 <h4>Personalised Program</h4>
                                 <p>Master your skills from where you are,
                                     with India's only personalised program</p>
                             </div>
-                            <img src='/images/tb-8.webp' alt='#'></img>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className='container5'>
+                <div>
+                    <h1>10K+</h1>
+                    <p>Students Enrolled</p>
+                </div>
+                <div>
+                    <h1>1000K+</h1>
+                    <p>Doubts Solved</p>
+                </div>
+                <div>
+                    <h1>2K+ hrs</h1>
+                    <p>Mentor Interaction</p>
+                </div>
+            </div>
+            <div className='container6'>
+                <h2>Crack Reputed Coding Contests</h2>
+                <img src='/images/comp-banner.webp' alt='#'></img>
+            </div>
+            <div className='container7'>
+                <h3>Curriculum</h3>
+                <div className='box7'>
+                    <div className='box7a'>
+                        <div className='box7a1'>
+                            <img src='/images/13.webp' alt='#'></img>
+                            <p>Language Fundamentals (Choose any one of C/C++/Java/Python)</p>
+                        </div>
+                        <div className='box7a1'>
+                            <img src='/images/12.webp' alt='#'></img>
+                            <p>Language Fundamentals (Choose any one of C/C++/Java/Python)</p>
+                        </div>
+                        <div className='box7a1'>
+                            <img src='/images/11.webp' alt='#'></img>
+                            <p>Language Fundamentals (Choose any one of C/C++/Java/Python)</p>
+                        </div>
+                        <img src='/images/cur-img.webp' alt='#'></img>
+                    </div>
+                    <div className='box7b'>
+                        <ul>
+                            <li className='subtopic'>C/C++/Java/Python Overview</li>
+                            <li className='subtopic'>Logic Building</li>
+                            <li className='subtopic'>Data Types</li>
+                            <li className='subtopic'>Loops and Condition</li>
+                            <li className='subtopic'></li>
+                            <li className='subtopic'></li>
+                            <li className='subtopic'></li>
+                            <li className='subtopic'></li>
+                            <li className='subtopic'></li>
+                            <li className='subtopic'></li>
+                            <li className='subtopic'></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div className='container8'>
+                <div className='box8'>
+                    <h4>SELECT BATCH</h4>
+                    <div className='box8a'>
+                        <div className='box8a-1'>
+                            <div className='box8a-1A'>
+                                <h5>1st May</h5>
+                                <p>Enrolment Started</p>
+                            </div>
+                            <div>
+                                <h5>15th May</h5>
+                                <p>Enrolment Started</p>
+                            </div>
+                        </div>
+                        <div className='box8a-2'>
+                            <p>$25000</p>
+                            <button>Enroll Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className='container9'>
+                <h5>By The End Of This Course, You Will Be Able To</h5>
+                <div className='cont9-1'>
+                    <img src='/images/star.webp' alt='#'></img>
+                    <div className='cont9-2'>
+                        <div className='cont9-2A one'>
+                            <img src='/images/num1.webp' alt='#'></img>
+                            <p>4 star and above in CodeChef</p>
+                        </div>
+                        <div className='cont9-2A two'>
+                            <img src='/images/num2.webp' alt='#'></img>
+                            <p>Crack contests like Facebook Hacker Cup, Google Kickstart, ACM ICPC</p>
+                        </div>
+                        <div className='cont9-2A three'>
+                            <img src='/images/num3.webp' alt='#'></img>
+                            <p>Candidate master and above in CodeForces</p>
+                        </div>
+                        <div className='cont9-2A four'>
+                            <img src='/images/num4.webp' alt='#'></img>
+                            <p>Specialist and above in SPOJ.com</p>
                         </div>
                     </div>
                 </div>

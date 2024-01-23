@@ -1,0 +1,108 @@
+.container1 {
+    background: url(https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/development-programs/full-stack-bg.png);
+
+}
+
+.container1-A {
+    display: flex;
+    justify-content: space-around;
+    min-height: 60vh;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+/*---------------------containerA- left side--------------*/
+.container1-A-left {
+    width: 50%;
+    padding: 80px 0;
+}
+
+.container1-A-left p {
+    letter-spacing: .24px;
+    color: #fff;
+}
+
+.container1-A-left img {
+    width: 220px;
+    height: 98px;
+    border-radius: 10px;
+    background: transparent linear-gradient(90deg, #fff, #c7eaff) 0 0 no-repeat padding-box;
+    opacity: 1;
+}
+
+.container1-A-left h1 {
+    font-size: 28px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.prg {
+    margin-bottom: 45px;
+    font-size: 18px;
+}
+
+.buttn {
+    background: transparent;
+    box-shadow: 0 3px 6px rgba(95, 141, 196, .2);
+    border-radius: 5px;
+    color: #ff219f;
+    border: 1px solid #ff219f;
+    padding: 14px 51px 13px 50px;
+    font-weight: 400;
+    cursor: pointer;
+    text-align: center;
+    font-size: 18px;
+    width: 55%;
+}
+
+/*------------container1-A-rightside--------------------*/
+
+.container1-A-right {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.right-box {
+    width: 300px;
+    height: 10vh;
+    background: #fff 0 0 no-repeat padding-box;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1607843137254902);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    box-sizing: content-box;
+    text-align: center;
+    margin: 10px 0;
+    position: relative;
+    top: 30vh;
+}
+
+.para1 {
+    font-size: 15px;
+    letter-spacing: 0;
+    color: #424242;
+
+}
+
+.para2 {
+    font-size: 14px;
+    letter-spacing: 0;
+    color: #858585;
+}
+
+/*===========================CONTAINER2====================
+==============================*/
+.container2 {
+    max-width: 1366px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0 0;
+}

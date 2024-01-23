@@ -196,6 +196,7 @@
 -----------------------------------------*/
 .container4 {
     border: 2px solid green;
+    background-color: #fcfbfb;
 }
 
 .container4 h5 {
@@ -207,9 +208,11 @@
 }
 
 .contain4-sub {
-    border: 2px solid rgb(219, 127, 143);
+    border: 2px solid rgb(184, 14, 42);
     display: flex;
-
+    /* position: relative;
+    left: 5vw; */
+    padding: 28px;
     justify-content: space-evenly;
 }
 
@@ -217,9 +220,326 @@
     border: 1px solid rebeccapurple;
     display: flex;
     flex-direction: column;
-    gap: 3vw;
+    gap: 2vw;
 }
 
 .C4-1 {
     display: flex;
+    width: 26vw;
+    border: 2px solid #df3897;
+    align-items: center;
+    box-sizing: border-box;
+
+}
+
+.bb {
+    direction: rtl;
+    line-height: 1.5;
+}
+
+.C4-1 p {
+    font-size: 14px;
+}
+
+.C4-2 {
+    display: flex;
+    width: 30vw;
+    border: 2px solid #ce5298;
+    align-items: center;
+    box-sizing: border-box;
+    gap: 2vw;
+    line-height: 1.5;
+}
+
+
+.C4-2 p {
+    font-size: 14px;
+}
+
+.cir {
+    height: 12vh;
+    width: 11vw;
+    border-radius: 50%;
+    background: #fff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 15px rgba(138, 138, 138, .1607843137);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 3vw;
+
+}
+
+.cir2 {
+    height: 12vh;
+    width: 11vw;
+    border-radius: 50%;
+    background: #fff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 15px rgba(138, 138, 138, .1607843137);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: 3vw;
+
+}
+
+.middle-img {
+    width: 32vw;
+    height: 100%;
+    background-color: rgb(243, 242, 242);
+}
+
+
+/*===============================CONTAINER-5=========
+======================================*/
+.container5 {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-top: 1px solid #c2c2c2;
+    border-bottom: 1px solid #c2c2c2;
+    margin: 2rem auto;
+    max-width: 1147px;
+    margin-bottom: 3rem;
+    gap: 5vw;
+}
+
+.container5 h1 {
+    color: #00a6eb;
+    font: normal normal 700 2.75rem/4rem Inter;
+}
+
+.container5 p {
+    font-weight: 500;
+    color: #322e2e;
+}
+
+/*======================CONTAINER-6================
+================================*/
+.container6 {
+    font-size: 22px;
+    letter-spacing: 0px;
+    opacity: 1;
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+
+.container6 img {
+    width: 80vw;
+}
+
+/*=========================container7===========
+==================================*/
+.box7 {
+    display: flex;
+    width: 80%;
+    margin-left: 12vw;
+    gap: 2vw;
+}
+
+.box7a {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    gap: 5vh;
+    border: 2px solid green;
+
+}
+
+.box7a1 {
+    background: #fff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 8px rgba(133, 133, 133, .1607843137);
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 12vh;
+    gap: 3vw;
+}
+
+.box7a1 img {
+    height: 10vh;
+}
+
+.box7a1 p {
+    border-left: 1px solid #707070;
+    padding-left: 1rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.box7a1:hover {
+    color: #00a6ec;
+}
+
+.box7b {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0rem 3rem;
+    height: 100%;
+    box-shadow: 0px 2px 8px rgba(156, 154, 154, .1607843137);
+    border-radius: 10px;
+
+}
+
+.box7b li {
+    padding-left: 2rem;
+    margin: 1rem 0rem;
+    font-size: 12px;
+    color: #151414;
+    position: relative;
+
+}
+
+ul {
+    width: 100%;
+    list-style: none;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.subtopic::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    width: 2px;
+    height: 26px;
+    z-index: -1;
+    background-color: #00a6eb;
+}
+
+.subtopic::after {
+    content: "";
+    font-size: 30px;
+    position: absolute;
+    top: 4.5px;
+    left: 5px;
+    width: 12px;
+    height: 12px;
+    border: 2px solid #00a6eb;
+    border-radius: 50%;
+}
+
+/*===========================CONTAINER-8============
+============================================*/
+.container8 {
+    margin-top: 5vh;
+    width: 100%;
+    border-top: 0.5px solid #c2c2c2;
+    border-bottom: 0.5px solid #c2c2c2;
+    padding: 3rem 0;
+    box-sizing: border-box;
+}
+
+.box8 {
+    /* max-width: 1366px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    padding: 5px 0 0; */
+    display: flex;
+    align-items: center;
+}
+
+.box8 h4 {
+    /* margin-left: 10px;
+    width: 9rem; */
+    font: normal normal 400 1.1rem/1.5rem Inter;
+    margin-left: 10vw;
+}
+
+.box8a {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5vw;
+    width: 70%;
+    border: 2px solid red;
+}
+
+.box8a-1 {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 3vw;
+}
+
+.box8a-1A {
+    color: #fff;
+    background: #00a6eb 0 0 no-repeat padding-box;
+    box-shadow: 0 0 10px rgba(37, 37, 37, .1607843137254902);
+    border: 1px solid #00a3e6;
+    border-radius: 5px;
+    height: 16vh;
+    width: 15vw;
+    font-size: 14px;
+}
+
+/*===============================container9================
+=====================================*/
+.container9 {
+    background: #fff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 8px rgba(168, 164, 164, .1607843137);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3rem 1rem;
+    box-sizing: border-box;
+    min-height: 22rem;
+    max-width: 1147px;
+    margin: 3rem auto;
+    margin-bottom: 0rem;
+    border-top: 0.5px solid #c2c2c2;
+    border-bottom: 0.5px solid #c2c2c2;
+}
+
+.container9 h5 {
+    color: #3f3c3c;
+    font: normal normal 500 1.75rem/3rem Inter;
+    margin-bottom: 3rem;
+    display: block;
+}
+
+.cont9-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+    font: normal normal 700 1rem/1.5rem Inter;
+    gap: 2vw;
+}
+
+.cont9-2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    color: #151414;
+    border: 2px solid aqua;
+    gap: 2.5vw;
+}
+
+.cont9-2A {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 5px;
+    width: 43%;
+    gap: 1 vvw;
+
+}
+
+.one {
+    border-bottom: 4px solid #df3897;
+    border-right: 4px solid #df3897;
 }
