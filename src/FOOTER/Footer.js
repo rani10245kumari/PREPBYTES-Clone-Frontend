@@ -40,7 +40,6 @@ export default function Footer() {
                             <p>ifconfig Command in Linux</p>
                             <p>with Examples</p>
                             <p>pwd Command in Linux with</p>
-                            <p>Examples</p>
                             <p>diff Command Linux</p>
                             <p>Examples</p>
                             <p>Top Commandn in Linux with</p>

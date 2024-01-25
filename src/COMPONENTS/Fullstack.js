@@ -75,6 +75,28 @@ function Fullstack() {
                     <img src='/images/course-img.png' alt='#'></img>
                 </div>
             </div>
+            <div className='containerr4'>
+                <div className='cont4-left'>
+                    <img src='/images/girl-img.webp' alt='#'></img>
+                </div>
+                <div className='cont4-right'>
+                    <h5>What you will be after finishing the program?</h5>
+                    <div className='cont4-right-A'>
+                        <div className='C4-right1'>
+                            <img src='/images/certificate.svg' alt='#'></img>
+                            <p>Certified Full stack Developer</p>
+                        </div>
+                        <div className='C4-right1'>
+                            <img src='/images/realtime.svg' alt='#'></img>
+                            <p>Experience of Real world work</p>
+                        </div>
+                        <div className='C4-right1'>
+                            <img src='/images/excellent.svg' alt='#'></img>
+                            <p>Ready to crack any web developer interview</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }
