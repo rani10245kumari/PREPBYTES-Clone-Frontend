@@ -7,7 +7,7 @@ function MockTest() {
     const [data, setData] = useState([])
 
     useEffect(() => {
-        axios.get("https://prepbytes-clone-backend-mehz.onrender.com/").then(response => { setData(response.data) })
+        axios.get("http://localhost:5000/pages/mockdatasfind").then(response => { setData(response.data) })
 
     })
     console.log(data)

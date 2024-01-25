@@ -33,8 +33,46 @@ function Fullstack() {
             </div>
             <div className='container2'>
                 <h4>SELECT BATCH</h4>
-                <div>
-                    <label for></label>
+                <div className='radio'>
+                    <div className='radio1'>
+                        <label >
+                            <input type="radio" name="group1"></input>
+                        </label>
+                        <span className='spn'>
+                            <h5>1st May</h5>
+                            <p>Enrolment Started</p>
+                        </span>
+
+                    </div>
+                    <div className='radio1'>
+                        <label >
+                            <input type="radio" name="group1"></input>
+                        </label>
+                        <span className='spn'>
+                            <h5>15th May</h5>
+                            <p>Enrolment Started</p>
+                        </span>
+
+                    </div>
+                </div>
+                <div className='box3'>
+                    <h5>₹ 30000</h5>
+                    <div className='box3-A'>
+                        <button className='box3-bttn'>Enroll Now</button>
+                        <button className='box3-bttn2'>Try for free</button>
+                    </div>
+                </div>
+            </div>
+            <div className='containerr3'>
+                <div className='cont3-left'>
+                    <h4>Languages & Tools you will learn</h4>
+                    <p>Start learning web development from basics of HTML,
+                        CSS, Javascript.Master latest technologies like
+                        React, Node, Express. Get hands on Github, Mongo
+                        DB, Google Analytics, Facebook Analytics</p>
+                </div>
+                <div className='cont3-right'>
+                    <img src='/images/course-img.png' alt='#'></img>
                 </div>
             </div>
         </div>
