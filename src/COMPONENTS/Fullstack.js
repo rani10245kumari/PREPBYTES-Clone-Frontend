@@ -97,6 +97,27 @@ function Fullstack() {
                     </div>
                 </div>
             </div>
+            <div className='containerr5'>
+                <h4 className='head'>Companies that hire for the roles</h4>
+                <div className='cont-5'>
+                    <div className='cont-5A'>
+                        <h5>Tech Giants</h5>
+                        <p>Tech giants keep hiring for web developement roles. You will often find opening for Frontend, Backend or Full Stack Developers.
+                            Strong knowledge and good projects will help you grab an oppurtunity here</p>
+                    </div>
+                    <div className='cont-5A'>
+                        <h5>Established Startups</h5>
+                        <p>All the well known start ups have their website and
+                            they use latest tech to build them. Experience with web
+                            development and good problem skill is all you need to crack these companies.</p>
+                    </div>
+                    <div className='cont-5A'>
+                        <h5>Growing Startups</h5>
+                        <p>Almost Every Startup have a web app or mobile app.
+                            Hundreds of growing startups or Early-stage startup keep looking for interns or web developers to help them convert their idea to reality.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }

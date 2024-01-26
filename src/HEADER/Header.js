@@ -25,7 +25,9 @@ function Header() {
                         <Link to='/FullStackProgram' className='video'> Full Stack Program</Link>
                     </div>
                 </div>
-                <div className='study-mat'>Elevation Academy</div>
+                <div >
+                    <Link to='/Elevation-Acdemy' className='study-mat  ele'>Elevation Academy</Link>
+                </div>
 
                 <div className='study-mat'>Project <span><i class="fa-solid fa-caret-down"></i></span>
                     <div className='box2'>

@@ -1,0 +1,338 @@
+.elevationMain {
+    color: #3e4041;
+    min-height: 550px;
+    background: #fff;
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+}
+
+.elevation1 {
+    display: flex;
+    background-color: rgb(253, 240, 215);
+    width: 90%;
+    margin-left: 5vw;
+}
+
+.elevation1-left {
+    width: 40%;
+    padding: 60px 40px;
+}
+
+
+
+.para {
+    width: 70%;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #424242;
+}
+
+.list {
+    display: flex;
+    gap: 1vw;
+}
+
+.ele1-button {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.ele1-buttonA {
+    background: #00a5ec 0 0 no-repeat padding-box;
+    border: none;
+    padding: 15px 52px 14px 51px;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 18px;
+}
+
+.ele1-buttonB {
+    background: transparent;
+    box-shadow: 0 3px 6px rgba(95, 141, 196, .2);
+    border-radius: 5px;
+    color: #00a5ec;
+    border: 1px solid #00a5ec;
+    padding: 14px 41px 13px 30px;
+    font-weight: 400;
+    cursor: pointer;
+    text-align: center;
+    font-size: 18px;
+}
+
+.elevation1-right {
+    width: 60%;
+}
+
+.elevation1-right img {
+    margin-top: 10vh;
+    width: 100%;
+
+}
+
+/*------------------elevation2-------------*/
+.elevation2 {
+    max-width: 90%;
+    background: #e5f4fb 0 0 no-repeat padding-box;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.elevation-2 {
+    display: flex;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.ele2-left {
+    width: 35%;
+}
+
+.ele2-left h5 {
+    letter-spacing: 0;
+    color: #424242;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.ele2-left p {
+    letter-spacing: 0;
+    color: #f7f7f7;
+    background: #00a5ec 0 0 no-repeat padding-box;
+    display: inline-block;
+    padding: 7px 12px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.ele2-right {
+    width: 65%;
+    display: flex;
+    justify-content: center;
+}
+
+.EA_Batch__SessionInforContainer {
+    width: calc(100% - 26%);
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0em 1em;
+    gap: 2vw;
+    border: 2px solid green;
+}
+
+.EA_Batch_SessionBox {
+    height: 32vh;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Ea_SessionBoxTitle {
+    color: #095170;
+    font-size: 1vw;
+    font-weight: 600;
+}
+
+.Ea_session_date {
+    font-size: 12px;
+    background: #d6f3ff;
+    border: 0.5px dashed #00a5ec;
+    border-radius: 6px;
+    text-align: center;
+    color: #424242;
+    padding: 0.3em;
+    min-width: 7vw;
+}
+
+.dd {
+    width: 15vw;
+}
+
+.Ea_batch_SessionIconContainer {
+    position: relative;
+}
+
+.Ea_batch_SessionIconContainer:nth-child(1)::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    background: transparent linear-gradient(90deg, #00a5ec, #99e0ff);
+    position: absolute;
+    top: 28px;
+    left: 100%;
+    width: 10.5vw;
+}
+
+
+/*=====================container3================
+================================*/
+
+.EA__Job_PathMainContainer {
+    margin-left: 5vw;
+    width: 90%;
+    min-height: 600px;
+    margin-top: 6em;
+}
+
+.EA_jobPath_heading {
+    color: #424242;
+    font-size: 2vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    margin-bottom: 1em;
+}
+
+.EA_jobpathContainer {
+    width: 100%;
+    min-height: calc(600px - 50px);
+    display: flex;
+    justify-content: center;
+    padding: 2em 0em;
+}
+
+.EA_JobPath_List_Container {
+    width: 40%;
+}
+
+.EA_JobList_Box {
+    font-size: 1.1vw;
+    border-radius: 10px;
+    padding: 1em 0em;
+    width: 65%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    background: #fff;
+    border: 0.5px solid #c2c2c2;
+    position: relative;
+    margin-top: 40px;
+    font-weight: 600;
+
+}
+
+.EA_JobList_Box::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    background: transparent linear-gradient(90deg, #00a5ec, #99e0ff);
+    width: 61.5%;
+    right: -61.5%;
+}
+
+.EA_jobList_number {
+    width: 45px;
+    height: 40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1607843137254902);
+    border-radius: 10px;
+    color: #424242;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: -22px;
+}
+
+.EA_JobList_Box:nth-child(1) {
+    color: rgb(255, 158, 82);
+}
+
+.EA_JobList_Box:nth-child(2) {
+    color: rgb(232, 63, 63);
+}
+
+.EA_JobList_Box:nth-child(3) {
+    color: rgb(192, 39, 175);
+}
+
+.EA_JobList_Box:nth-child(4) {
+    color: rgb(32, 142, 189);
+}
+
+.EA_JobList_Box:nth-child(5) {
+    color: rgb(31, 194, 92);
+}
+
+.EA_JobList_Box:nth-child(1) .EA_jobList_number {
+    border: 1px dashed rgb(255, 158, 82);
+    background-color: rgb(255, 251, 248);
+    ;
+}
+
+.EA_JobList_Box:nth-child(2) .EA_jobList_number {
+    border: 1px dashed rgb(232, 63, 63);
+    background-color: rgb(255, 242, 242);
+}
+
+.EA_JobList_Box:nth-child(3) .EA_jobList_number {
+    background-color: rgb(255, 241, 253);
+    border: 1px dashed rgb(192, 39, 175);
+}
+
+.EA_JobList_Box:nth-child(4) .EA_jobList_number {
+    background-color: rgb(226, 246, 255);
+    border: 1px dashed rgb(32, 142, 189);
+}
+
+.EA_JobList_Box:nth-child(5) .EA_jobList_number {
+    background-color: rgb(231, 255, 240);
+    border: 1px dashed rgb(31, 194, 92);
+}
+
+
+
+.EA_JobPath_List_Desc_Container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background: #f7f7f7;
+    border-radius: 10px;
+    border: 1px;
+    padding: 0em 2em;
+    padding-bottom: 2em;
+    border: 2px solid red;
+    gap: 4vh;
+}
+
+.EA_jobPath_descBox {
+    display: flex;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1607843137254902);
+    border-radius: 10px;
+    background: transparent linear-gradient(101deg, #fff, #f3fcff) 0 0 no-repeat padding-box;
+    height: 18vh;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0em 0.5em;
+    position: relative;
+    z-index: 2;
+}
+
+.EA_jobPath_descBox_text {
+    width: calc(100% - 150px);
+    color: #424242;
+    font-size: 1vw;
+}
+
+.Ea_JobPath_descBox_poster {
+    width: 130px;
+    object-fit: contain;
+    object-position: center;
+}

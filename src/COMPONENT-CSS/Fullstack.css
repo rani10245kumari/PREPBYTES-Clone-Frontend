@@ -220,7 +220,7 @@
 -----------------------------*/
 .containerr4 {
     display: flex;
-    margin-top: 5vh;
+    margin-top: 10vh;
 }
 
 .cont4-left {
@@ -241,7 +241,7 @@
 .cont4-right h5 {
     color: rgba(10, 45, 71, .9294117647058824);
     font-size: 30px;
-    margin-top: 40px;
+    margin-top: 10px;
     margin-bottom: 90px;
     text-align: center;
 }
@@ -249,7 +249,7 @@
 .cont4-right-A {
     display: flex;
     flex-direction: column;
-    gap: 5vh;
+    gap: 4vh;
     font-family: Poppins, sans-serif;
     font-weight: 500;
     width: 70%;
@@ -260,8 +260,47 @@
     display: flex;
     justify-content: space-evenly;
     border: 2px solid green;
+    color: rgba(72, 55, 55, .9294117647058824);
 }
 
 .C4-right1 p {
     width: 50%;
+}
+
+/*-------------------------containerr5---------------
+-------------------------------*/
+.head {
+    text-align: center;
+    padding-top: 70px;
+    margin-bottom: 70px;
+    color: rgba(10, 45, 71, .9294117647058824);
+    font-size: 30px;
+}
+
+.cont-5 {
+    display: flex;
+}
+
+.cont-5A {
+    flex: 0 0 21em;
+    margin: 30px auto;
+    padding: 15px 30px;
+    background-color: #fff;
+    background: transparent linear-gradient(180deg, #d0dee9, #fff) 0 0 no-repeat padding-box;
+    box-shadow: 0 10px 30px rgba(208, 222, 233, .41568627450980394);
+    border-radius: 10px;
+}
+
+.cont-5A h5 {
+    color: rgba(10, 45, 71, .9294117647058824);
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 15px;
+}
+
+.cont-5A p {
+    color: rgba(106, 127, 134, .9294117647058824);
+    text-align: center;
 }

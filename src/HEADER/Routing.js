@@ -8,6 +8,7 @@ import MockTest from '../COMPONENTS/MockTest'
 import VideoTutorial from '../COMPONENTS/VideoTutorial'
 import MasterComp from '../COMPONENTS/MasterComp'
 import Fullstack from '../COMPONENTS/Fullstack'
+import ElevationAcdemy from '../COMPONENTS/ElevationAcdemy'
 function Routing() {
     return (
         <div>
@@ -21,6 +22,7 @@ function Routing() {
                 <Route path='/videotutorial' element={<VideoTutorial></VideoTutorial>}></Route>
                 <Route path='/MasterCompetitiveProgramming' element={<MasterComp></MasterComp>}></Route>
                 <Route path='/FullStackProgram' element={<Fullstack></Fullstack>}></Route>
+                <Route path='/Elevation-Acdemy' element={<ElevationAcdemy></ElevationAcdemy>}></Route>
             </Routes>
 
         </div>
