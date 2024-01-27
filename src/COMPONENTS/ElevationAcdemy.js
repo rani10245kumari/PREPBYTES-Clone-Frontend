@@ -238,6 +238,16 @@ function ElevationAcdemy() {
                     }
                 </div>
             </div>
+            <div className='elevation6'>
+                <div className='ele6-left'>
+                    <p>Upcoming Elevation Academy Batch - Full Stack Web Development Career - May 2023 now OPEN</p>
+                    <button>Apply Now</button>
+                </div>
+                <div className='ele6-right'>
+                    <img src='/images/elevation6.webp' alt='#'></img>
+                </div>
+
+            </div>
         </div>
     )
 }
