@@ -1,6 +1,33 @@
 import React from 'react'
-import '../COMPONENT-CSS/ElevationAcdemy.css'
+import '../COMPONENT-CSS/ElevationAcdemy.css';
+import { useState, useEffect } from 'react';
+import axios from 'axios';
+
+
 function ElevationAcdemy() {
+    const [ShowSyllabus, setShowSyllabus] = useState(false);
+    const [Syllabus, setSyllabus] = useState([]);
+
+    useEffect(() => {
+
+        axios.get("https://prepbytes-clone-backend-mehz.onrender.com/syllabusdata").then((response) => {
+            setSyllabus(response.data)
+
+        });
+
+
+    }, []);
+
+
+
+    const handleShowSyllabus = (e) => {
+        e.preventDefault();
+        e.target.classList.toggle("fa-circle-minus")
+        e.target.classList.toggle("fa-circle-plus")
+        e.target.parentElement.nextSibling.classList.toggle("EA_ProgramSyllabus_ActiveContentBox")
+        setShowSyllabus(!ShowSyllabus)
+
+    }
     return (
         <div className='elevationMain'>
             <div className='elevation1'>
@@ -135,6 +162,81 @@ function ElevationAcdemy() {
                     </div>
                 </div>
 
+            </div>
+            <div className='elevation4'>
+                <h2>Why PrepBytes Elevation Academy?</h2>
+                <div className='ele-cards'>
+                    <div className='ele4-cards'>
+                        <img src='/images/ee1.webp' alt='#'></img>
+                        <div className='ele4-innercard'>
+                            <h4>Live Learning</h4>
+                            <p>Master Mern Stack in Live Classes taken by Experts</p>
+                        </div>
+                    </div>
+                    <div className='ele4-cards'>
+                        <img src='/images/ee1.webp' alt='#'></img>
+                        <div className='ele4-innercard'>
+                            <h4>Live Learning</h4>
+                            <p>Master Mern Stack in Live Classes taken by Experts</p>
+                        </div>
+                    </div>
+                    <div className='ele4-cards'>
+                        <img src='/images/ee1.webp' alt='#'></img>
+                        <div className='ele4-innercard'>
+                            <h4>Live Learning</h4>
+                            <p>Master Mern Stack in Live Classes taken by Experts</p>
+                        </div>
+                    </div>
+                    <div className='ele4-cards'>
+                        <img src='/images/ee1.webp' alt='#'></img>
+                        <div className='ele4-innercard'>
+                            <h4>Live Learning</h4>
+                            <p>Master Mern Stack in Live Classes taken by Experts</p>
+                        </div>
+                    </div>
+                    <div className='ele4-cards'>
+                        <img src='/images/ee1.webp' alt='#'></img>
+                        <div className='ele4-innercard'>
+                            <h4>Live Learning</h4>
+                            <p>Master Mern Stack in Live Classes taken by Experts</p>
+                        </div>
+                    </div>
+                    <div className='ele4-cards'>
+                        <img src='/images/ee1.webp' alt='#'></img>
+                        <div className='ele4-innercard'>
+                            <h4>Live Learning</h4>
+                            <p>Master Mern Stack in Live Classes taken by Experts</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className='elevation5'>
+                <div className="EA_ProgramSyllabus_MainContainer">
+
+                    <h2 className="EA_ProgramSyllabus__Mainheading">Program Syllabus</h2>
+                    <h2 className="EA_ProgramSyllabus__Secondaryheading">Learn from the best and be prepared to crack full stack developer jobs</h2>
+
+                    {
+                        Syllabus?.map((ele) => {
+                            return <div className="EA_programSyllabus_Container" key={ele.syllabusID}>
+                                <h2 className="EA_ProgramSyllabus_Container_heading">{ele.syllabusDuration}</h2>
+
+                                <div className="EA_programSyllabus_box">
+                                    <p className="EA_programSyllabus_numbering"> <span>{ele.syllabusID}</span></p>
+                                    <p className="EA_programSyllabus_topic">{ele.syllabusTitle}</p>
+                                    <i className={`fa-solid fa-circle-plus EA_ProgramSyllabus_plusICon`} onClick={handleShowSyllabus}></i>
+                                </div>
+                                <div className="EA_ProgramSyllabus_ContentBox">
+                                    <h3 className="EA_programSyllabus_content_heading">{ele.syllabusContentTitle}</h3>
+                                    {
+                                        ele?.syllabusContent.map((content, index) => <p className="EA_ProgramSyllabus_Content" key={index + ele.syllabusID}>{content}</p>)
+                                    }
+                                </div>
+
+                            </div>
+                        })
+                    }
+                </div>
             </div>
         </div>
     )
