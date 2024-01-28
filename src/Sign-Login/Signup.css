@@ -4,4 +4,12 @@
     background-repeat: no-repeat;
     min-height: 100vh;
     font-family: Inter;
+    display: flex;
+}
+
+.register-left {
+    width: 60%;
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 80px;
 }
