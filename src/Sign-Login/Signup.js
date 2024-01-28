@@ -42,7 +42,7 @@ function Signup() {
         }
         else {
             setIsUserLoading(true)
-            axios.post("http://localhost:5000/user/register", userDetails).then((response) => {
+            axios.post("https://prepbytes-clone-backend-mehz.onrender.com/user/register", userDetails).then((response) => {
                 console.log(response);
 
                 setMessage({ "msgVal": response.data.resMsg })
