@@ -28,7 +28,7 @@ function Login() {
             setMessage({ "msgVal": "One or more required fields is missing or invalid" });
         } else {
             setIsUserLoading(true)
-            axios.post("https://pb-clone.onrender.com/user/login", userDetails).then((response) => {
+            axios.post("https://prepbytes-clone-backend-mehz.onrender.com/user/login", userDetails).then((response) => {
 
                 if (response.data.UserDetails) {
                     dispath(userLoginAction(response.data.UserDetails[0]))
