@@ -12,4 +12,86 @@
     display: flex;
     padding-top: 100px;
     padding-bottom: 80px;
+    border: 2px solid red;
+    gap: 1vw;
+}
+
+.back-img {
+    width: 60%;
+    margin-left: 5vw;
+    border: 2px solid white;
+}
+
+.register-left2 {
+    width: 17vw;
+    border: 1px solid #fff;
+    background-color: #fff;
+    margin-top: 40px;
+    padding-bottom: 8px;
+    border-radius: 5px;
+    text-align: center;
+    height: fit-content;
+}
+
+.pb-logo {
+    height: 75px !important;
+    width: auto !important;
+    margin-bottom: -15px;
+    margin-top: -35px;
+}
+
+.register-left3 {
+    display: flex;
+    align-items: end;
+    justify-content: space-evenly;
+    color: #423c3c;
+}
+
+.logo1 {
+    width: auto !important;
+    height: 50px !important;
+}
+
+.register-left3 h5 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: -7px;
+}
+
+/*--------------------register-right--------*/
+.register-right {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .1607843137254902);
+    border-radius: 10px;
+    margin: 100px 40px 13%;
+    padding: 0 10px;
+    background-color: #fffffe;
+}
+
+.reg-right1 {
+    height: 75px;
+    background: #fff;
+    margin: 0 3%;
+    padding: 10px 9% 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+}
+
+.link1 {
+    width: 50%;
+    color: #4a8ce5;
+    font-weight: 600;
+    border-bottom: 3px solid #4a8ce5;
+    background: #fff;
+    text-align: center;
+    padding-top: 35px;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.reg-right2 {
+    padding: 14px 50px 40px;
 }
