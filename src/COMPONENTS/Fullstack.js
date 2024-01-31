@@ -116,6 +116,11 @@ function Fullstack() {
                         <p>Almost Every Startup have a web app or mobile app.
                             Hundreds of growing startups or Early-stage startup keep looking for interns or web developers to help them convert their idea to reality.</p>
                     </div>
+                    <div className='cont-5A'>
+                        <h5>Growing Startups</h5>
+                        <p>Almost Every Startup have a web app or mobile app.
+                            Hundreds of growing startups or Early-stage startup keep looking for interns or web developers to help them convert their idea to reality.</p>
+                    </div>
                 </div>
             </div>
         </div>

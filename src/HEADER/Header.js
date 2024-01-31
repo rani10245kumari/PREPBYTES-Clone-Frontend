@@ -34,7 +34,9 @@ function Header() {
                         <Link to='/html' className='video'>HTML</Link>
                         <Link to='/css' className='video'> CSS</Link>
                         <Link to='/javascript' className='video'>javascript</Link>
-
+                        <Link to='/reactjs' className='video'>React Js</Link>
+                        <Link to='/node' className='video'>Node js</Link>
+                        <Link to='/mongodb' className='video'>Mongodb</Link>
                     </div>
                 </div>
 

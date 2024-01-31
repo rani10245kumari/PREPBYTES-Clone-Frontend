@@ -75,6 +75,7 @@ a {
     top: 3vh;
     font-weight: bold;
     background-color: white;
+    padding-left: 15px;
 }
 
 .box2 {
@@ -89,18 +90,19 @@ a {
     box-shadow: 2px 2px 2px 2px rgb(212, 211, 211);
     gap: 2vh;
     border-radius: 10px;
-    height: 28vh;
+    min-height: 20vh;
     width: 12vw;
     position: absolute;
     right: 5px;
     top: 3.5vh;
     font-weight: bold;
-
+    padding: 15px;
 }
 
 .video {
     color: grey;
     padding-top: 10px;
+
 }
 
 .video:hover {
