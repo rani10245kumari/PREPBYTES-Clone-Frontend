@@ -1,0 +1,41 @@
+.project-main {
+    background-image: url(https://blog.prepbytes.com/wp-content/uploads/2019/11/Header_Final-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: block;
+}
+
+
+
+
+.proj-title {
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #072448;
+    padding: 7vw;
+
+}
+
+.proj-title:hover {
+    color: rgb(32, 136, 177);
+}
+
+.top {
+    font-size: 16px;
+    padding-left: 7vw;
+}
+
+.project-navbar {
+    display: flex;
+    width: 100%;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+    gap: 8vw;
+    font-weight: 500;
+    padding: 5vh;
+    border-bottom: 2px solid #3e404170;
+    font-size: 22px;
+}

@@ -31,12 +31,12 @@ function Header() {
 
                 <div className='study-mat'>Project <span><i class="fa-solid fa-caret-down"></i></span>
                     <div className='box2'>
-                        <Link to='/html' className='video'>HTML</Link>
-                        <Link to='/css' className='video'> CSS</Link>
-                        <Link to='/javascript' className='video'>javascript</Link>
-                        <Link to='/reactjs' className='video'>React Js</Link>
-                        <Link to='/node' className='video'>Node js</Link>
-                        <Link to='/mongodb' className='video'>Mongodb</Link>
+                        <Link to='/project/html' className='video'>HTML</Link>
+                        <Link to='/project/css' className='video'> CSS</Link>
+                        <Link to='/project/javascript' className='video'>javascript</Link>
+                        <Link to='/project/reactjs' className='video'>React Js</Link>
+                        <Link to='/project/node' className='video'>Node js</Link>
+                        <Link to='/project/mongodb' className='video'>Mongodb</Link>
                     </div>
                 </div>
 

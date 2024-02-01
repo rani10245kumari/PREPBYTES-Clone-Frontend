@@ -9,6 +9,8 @@ import VideoTutorial from '../COMPONENTS/VideoTutorial'
 import MasterComp from '../COMPONENTS/MasterComp'
 import Fullstack from '../COMPONENTS/Fullstack'
 import ElevationAcdemy from '../COMPONENTS/ElevationAcdemy'
+import Project from '../COMPONENTS/Project'
+import Html from '../COMPONENTS/PROJECT/Html'
 function Routing() {
     return (
         <div>
@@ -23,6 +25,8 @@ function Routing() {
                 <Route path='/MasterCompetitiveProgramming' element={<MasterComp></MasterComp>}></Route>
                 <Route path='/FullStackProgram' element={<Fullstack></Fullstack>}></Route>
                 <Route path='/Elevation-Acdemy' element={<ElevationAcdemy></ElevationAcdemy>}></Route>
+                <Route path='/project' element={<Project></Project>}></Route>
+                <Route path='/project/html' element={<Html></Html>}></Route>
             </Routes>
 
         </div>
