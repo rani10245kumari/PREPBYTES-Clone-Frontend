@@ -11,6 +11,11 @@ import Fullstack from '../COMPONENTS/Fullstack'
 import ElevationAcdemy from '../COMPONENTS/ElevationAcdemy'
 import Project from '../COMPONENTS/Project'
 import Html from '../COMPONENTS/PROJECT/Html'
+import Css from '../COMPONENTS/PROJECT/Css'
+import Javascript from '../COMPONENTS/PROJECT/Javascript'
+import Reactjs from '../COMPONENTS/PROJECT/React'
+import Node from '../COMPONENTS/PROJECT/Node'
+import Mongodb from '../COMPONENTS/PROJECT/Mongodb'
 function Routing() {
     return (
         <div>
@@ -27,6 +32,11 @@ function Routing() {
                 <Route path='/Elevation-Acdemy' element={<ElevationAcdemy></ElevationAcdemy>}></Route>
                 <Route path='/project' element={<Project></Project>}></Route>
                 <Route path='/project/html' element={<Html></Html>}></Route>
+                <Route path='/project/css' element={<Css></Css>}></Route>
+                <Route path='/project/javascript' element={<Javascript></Javascript>}></Route>
+                <Route path='/project/reactjs' element={<Reactjs></Reactjs>}></Route>
+                <Route path='/project/node' element={<Node></Node>}></Route>
+                <Route path='/project/mongodb' element={<Mongodb></Mongodb>}></Route>
             </Routes>
 
         </div>
