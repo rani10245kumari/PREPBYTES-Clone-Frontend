@@ -15,8 +15,8 @@ function Login() {
     const [Message, setMessage] = useState({ "msgVal": "" });
 
 
-    const userData = useSelector(state => state.AppUser.UserDetails);
-    console.log(userData)
+    // const userData = useSelector(state => state.AppUser.UserDetails);
+    // console.log(userData)
 
 
     const [userDetails, setUserDetails] = useState({
@@ -41,8 +41,9 @@ function Login() {
 
                 console.log(response)
                 if (response.data.User) {
-                    dispatch(userLoginAction(response.data.User[0]))
-                    console.log(response.data.User)
+                    dispatch(userLoginAction(response.data.User))
+                    const usern = response.data.User.userName
+                    console.log(usern)
 
                     navigateTO("/");
                     setIsUserLoading(false);
@@ -94,6 +95,7 @@ function Login() {
                 </div>
 
                 <div className='reg-right2'>
+
                     <h2 className="userLOGINFORM_Heading">Sign in to your account</h2>
 
                     <div className='form__itemBOX'>
@@ -107,6 +109,7 @@ function Login() {
                     <p className="forgetlink">Forgot your password?</p>
                     <button className='formCommonBtn singinButton' onClick={handlSIGNINclick}>SIGN IN</button>
                     <button className='formCommonBtn loginByOTPBTN'>Login Via OTP</button>
+
 
                     {
                         Message.msgVal && <p className='formResponseMsg'>{Message.msgVal}</p>

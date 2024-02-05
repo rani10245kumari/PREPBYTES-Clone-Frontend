@@ -1,15 +1,24 @@
 import React from 'react'
 import './Header.css'
 import { Link } from 'react-router-dom'
+import { useSelector, useDispatch } from 'react-redux'
+
 
 function Header() {
+    const userData = useSelector(state => state.AppUser.UserDetails);
+    console.log(userData)
+    console.log(userData.isLoggedIN)
     return (
         <div className='header'>
             <img src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/navbar/logoPrepBytes.svg' alt='#' className='logo'></img>
-            <div className='login-signup'>
-                < Link to='/signup' className='signup'>Signup</Link>
-                < Link to='/login' className='login'>Login</Link>
-            </div>
+
+            {
+                !userData.isLoggedIN && <div className='login-signup'>
+                    <Link to='/signup' className='signup'>Signup</Link>
+
+                    <Link to='/login' className='login'>Login</Link>
+                </div>
+            }
             <div className='all-content'>
 
                 <div className='study-mat'>Study Material<span><i class="fa-solid fa-caret-down"></i></span>
@@ -25,6 +34,7 @@ function Header() {
                         <Link to='/FullStackProgram' className='video'> Full Stack Program</Link>
                     </div>
                 </div>
+
                 <div >
                     <Link to='/Elevation-Acdemy' className='study-mat  ele'>Elevation Academy</Link>
                 </div>
@@ -40,9 +50,19 @@ function Header() {
                     </div>
                 </div>
 
+                <div>
+                    {
+                        userData.isLoggedIN && <div>
+                            <span>{userData.User[0].userName.slice(0, 1)}</span>
+                            <p>Hii, {userData.User[0].userName}</p>
+                        </div>
+                    }
+                </div>
+
+
             </div>
 
-        </div>
+        </div >
     )
 }
 
