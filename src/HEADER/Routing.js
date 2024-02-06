@@ -37,6 +37,7 @@ function Routing() {
                 <Route path='/project/reactjs' element={<Reactjs></Reactjs>}></Route>
                 <Route path='/project/node' element={<Node></Node>}></Route>
                 <Route path='/project/mongodb' element={<Mongodb></Mongodb>}></Route>
+
             </Routes>
 
         </div>

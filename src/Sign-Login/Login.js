@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import axios from "axios"
 import { useNavigate } from 'react-router-dom'
 import { userLoginAction } from '../ReduxSlice/Slice'
-import { useDispatch, useSelector } from 'react-redux'
+import { useDispatch } from 'react-redux'
 import { Link } from 'react-router-dom'
 function Login() {
 

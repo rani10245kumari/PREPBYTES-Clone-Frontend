@@ -1,13 +1,23 @@
 import React from 'react'
 import './Header.css'
-import { Link } from 'react-router-dom'
-import { useSelector, useDispatch } from 'react-redux'
+import { Link, useNavigate } from 'react-router-dom'
+import { useSelector, useDispatch } from 'react-redux';
+import { useState } from 'react';
+import { userLogOut } from '../ReduxSlice/Slice'
+
+
 
 
 function Header() {
+
+    const dispatch = useDispatch();
     const userData = useSelector(state => state.AppUser.UserDetails);
     console.log(userData)
     console.log(userData.isLoggedIN)
+
+    const [useDropDownShow, setUserDropDown] = useState(false);
+    const navigateTO = useNavigate();
+
     return (
         <div className='header'>
             <img src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/navbar/logoPrepBytes.svg' alt='#' className='logo'></img>
@@ -50,14 +60,28 @@ function Header() {
                     </div>
                 </div>
 
-                <div>
+                <div className='myname'>
                     {
-                        userData.isLoggedIN && <div>
-                            <span>{userData.User[0].userName.slice(0, 1)}</span>
-                            <p>Hii, {userData.User[0].userName}</p>
+                        userData.isLoggedIN && <div className='only'>
+                            <div className='names' onClick={() => setUserDropDown(!useDropDownShow)}>
+                                <p className='circlen'>{userData.User[0].userName.slice(0, 1)}</p>
+                                <span>Hii, {userData.User[0].userName}</span>
+                            </div>
+                            {
+                                useDropDownShow && <div className="dropDownContainer userDropownContainer">
+                                    <Link to="/dashboard" className='dropDownContainer__Item' onClick={() => setUserDropDown(false)}><i className="fa-solid fa-chalkboard-user"> </i>My Dashboard </Link>
+                                    <span style={{ "color": "#ff8787" }} className='dropDownContainer__Item' onClick={() => {
+                                        setUserDropDown(false)
+                                        dispatch(userLogOut());
+                                        navigateTO("/")
+                                    }} >Log Out</span>
+                                </div>
+                            }
                         </div>
                     }
                 </div>
+
+
 
 
             </div>

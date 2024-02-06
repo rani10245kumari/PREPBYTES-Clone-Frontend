@@ -108,3 +108,80 @@ a {
 .video:hover {
     color: rgb(29, 123, 231);
 }
+
+
+/*----------------------my name after login------------------*/
+
+.myname {
+    position: relative;
+    bottom: 3vh;
+    margin-left: 40px;
+    text-transform: capitalize;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.names {
+    width: 12vw;
+    height: 35px;
+    gap: 1vw;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    border: 2px solid rgb(111, 0, 255);
+    text-align: center;
+    letter-spacing: 1.5px;
+    color: #4b8ce8;
+
+}
+
+.circlen {
+    color: #fff;
+    width: 35px;
+    height: 35px;
+    box-sizing: border-box;
+    padding-left: 2px;
+    background-color: #03A6EC;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    font-size: 1.25rem;
+    align-items: center;
+    flex-shrink: 0;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    line-height: 1;
+    user-select: none;
+    border-radius: 50%;
+    justify-content: center;
+}
+
+
+
+.userDropownContainer {
+    box-shadow: none;
+    display: block !important;
+    position: absolute;
+    left: 0%;
+    top: 130%;
+    min-width: max-content;
+    width: 120%;
+    line-height:3.8;
+    color: #5a5a5a;
+    background-color: #fff;
+    border-top: 0.1px solid rgba(0,0,0,.07);
+    font-weight: 400;
+    border-bottom: 0.1px solid rgba(0,0,0,.07);
+}
+
+.userDropownContainer .dropDownContainer__Item {
+    padding-left: 1em;
+}
+
+.userDropownContainer .dropDownContainer__Item:nth-child(1) {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-weight: 400;
+    gap: 10px;
+    border-bottom: 1px solid #3e4041;
+}

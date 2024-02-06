@@ -27,6 +27,7 @@ function MockTest() {
                 <div className='feattured-mock-test'>
 
                     {data.filter((item) => item.testCategory === "FeaturedMock").map(item => {
+
                         return (
                             // <div className='item-container' onClick={() => Navigate(`/product/${item.id}`)}>
                             <div className='mock1'>

@@ -27,21 +27,21 @@ const UserReduxSlice = createSlice({
             localStorage.removeItem("User")
         },
 
-        // addTempCourse(state, action) {
-        //     state.UserDetails.tempCourse = action.payload;
-        // },
+        addTempCourse(state, action) {
+            state.UserDetails.tempCourse = action.payload;
+        },
 
-        // removeTempCourse(state, action) {
-        //     state.UserDetails.tempCourse = [];
-        // },
+        removeTempCourse(state, action) {
+            state.UserDetails.tempCourse = [];
+        },
 
-        // confirmOrder(state, action) {
-        //     state.UserDetails.myOrder.push(action.payload);
-        //     localStorage.setItem("myOrder", JSON.stringify(state.UserDetails.myOrder));
-        //     axios.post("https://pb-clone.onrender.com/storeData", action.payload).then((response) => {
-        //         console.log(response.data)
-        //     })
-        // }
+        confirmOrder(state, action) {
+            state.UserDetails.myOrder.push(action.payload);
+            localStorage.setItem("myOrder", JSON.stringify(state.UserDetails.myOrder));
+            axios.post("https://pb-clone.onrender.com/storeData", action.payload).then((response) => {
+                console.log(response.data)
+            })
+        }
     }
 });
 
