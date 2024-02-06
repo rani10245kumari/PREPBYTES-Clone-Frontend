@@ -5,30 +5,31 @@ import '../COMPONENT-CSS/Mock-test.css'
 import { useDispatch, useSelector } from 'react-redux'
 import { confirmOrder } from '../ReduxSlice/Slice'
 import Loader from './Loader'
+import { useNavigate } from 'react-router-dom'
+
 
 function MockTest() {
+
     const [data, setData] = useState([])
     const dispatch = useDispatch()
     const { User } = useSelector((state) => state.AppUser.UserDetails);
     const [isLoading, setIsloading] = useState(false)
+    const navi = useNavigate();
 
     useEffect(() => {
         setIsloading(true)
         axios.get("http://localhost:5000/pages/mockdatasfind ").then(response => { setData(response.data) })
         setIsloading(false)
     }, [])
+
     console.log(data)
     console.log(User)
 
-    const handleBuyNow = (e, item) => {
-        e.preventDefault();
 
-        item.userEmail = User.length > 0 ? User[0].userEmail : ""
-        dispatch(confirmOrder(item));
-        setTimeout(() => {
-            alert("Course purchased Successfully")
-        }, 1500);
 
+    const handleBuyNow = async (item) => {
+        await axios.post("http://localhost:5000/pages/addtocart", item)
+        navi('/payment')
     }
 
     return (
@@ -80,7 +81,7 @@ function MockTest() {
                                                         </div>
                                                     </div>
                                                     <h5 className='pp'>${item.testPrice}</h5>
-                                                    <button className='buynow' onClick={(e) => handleBuyNow(e, item)}>Buy Now</button>
+                                                    <button className='buynow' onClick={() => handleBuyNow(item)}>Buy Now</button>
                                                 </div>
                                             )
                                         })}
