@@ -1,3 +1,18 @@
 .headcart {
     text-align: center;
 }
+
+.cart-item {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.childCartConatiner {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cart-img {
+    height: 15vh;
+    width: 8vw;
+}

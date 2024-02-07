@@ -10,21 +10,19 @@ const Payment = () => {
 
     useEffect(() => {
         axios
-            .get("https://prepbytes-clone-backend-mehz.onrender.com/pages/getcartdata")
+            .get("http://localhost:5000/pages/getcartdata")
             .then((res) => setCartItems(res.data))
             .catch((err) => console.error(err));
     }, []);
     console.log(cartItems)
 
-    const handleRemoveCart = async (itemId) => {
+    const handleRemoveCart = async (item) => {
         await axios
-            .post("https://prepbytes-clone-backend-mehz.onrender.com/pages/getdataRemove", {
-                id: itemId,
-            })
+            .post("http://localhost:5000/pages/getdataRemove", item)
             .then((res) => console.log(res.data));
 
         axios
-            .get("https://prepbytes-clone-backend-mehz.onrender.com/pages/getcartdata")
+            .get("http://localhost:5000/pages/getcartdata")
             .then((res) => setCartItems(res.data));
     };
 
@@ -35,6 +33,12 @@ const Payment = () => {
 
             <div className="cart-content">
 
+                <div className="cart-item">
+                    <h5>TEST TITLE</h5>
+                    <h5>TEST IMG</h5>
+                    <h5>TEST CATEGORY</h5>
+                    <h5>TEST PRICE</h5>
+                </div>
 
                 <div className="CartConatiner">
                     {cartItems &&
@@ -43,13 +47,13 @@ const Payment = () => {
 
 
                                 <p>{item.testTitle}</p>
-                                <img src={item.testImg} alt="#"></img>
+                                <img src={item.testImg} alt="#" className="cart-img"></img>
                                 <p>{item.testCategory}</p>
                                 <p>{item.testPrice}</p>
 
                                 <button
                                     className="RemoveButtton"
-                                    onClick={() => handleRemoveCart(item.testID)}
+                                    onClick={() => handleRemoveCart(item)}
                                 >
                                     Remove
                                 </button>

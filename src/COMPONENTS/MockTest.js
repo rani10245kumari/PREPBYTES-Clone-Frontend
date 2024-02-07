@@ -28,8 +28,18 @@ function MockTest() {
 
 
     const handleBuyNow = async (item) => {
-        await axios.post("https://prepbytes-clone-backend-mehz.onrender.com/pages/addtocart", item)
-        navi('/payment')
+        await axios.post("http://localhost:5000/pages/addtocart", item)
+            .then((response) => {
+                if (response.data.msg === "Item is added ") {
+                    alert(response.data.msg)
+                    navi('/payment')
+                }
+                else {
+                    alert(response.data.msg)
+                }
+
+            })
+
     }
 
     return (
