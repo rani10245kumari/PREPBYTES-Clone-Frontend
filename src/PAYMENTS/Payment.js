@@ -22,7 +22,7 @@ const Payment = () => {
             .then((res) => console.log(res.data));
 
         axios
-            .get("https://prepbytes-clone-backend-mehz.onrender.com/getcartdata")
+            .get("https://prepbytes-clone-backend-mehz.onrender.com/pages/getcartdata")
             .then((res) => setCartItems(res.data));
     };
 
