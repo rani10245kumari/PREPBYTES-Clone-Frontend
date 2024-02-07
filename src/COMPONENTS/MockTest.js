@@ -28,7 +28,7 @@ function MockTest() {
 
 
     const handleBuyNow = async (item) => {
-        await axios.post("http://localhost:5000/pages/addtocart", item)
+        await axios.post("https://prepbytes-clone-backend-mehz.onrender.com/pages/addtocart", item)
         navi('/payment')
     }
 
