@@ -10,7 +10,7 @@ const Payment = () => {
 
     useEffect(() => {
         axios
-            .get("http://localhost:5000/pages/getcartdata")
+            .get("https://prepbytes-clone-backend-mehz.onrender.com/pages/getcartdata")
             .then((res) => setCartItems(res.data))
             .catch((err) => console.error(err));
     }, []);
@@ -18,17 +18,17 @@ const Payment = () => {
 
     const handleRemoveCart = async (item) => {
         await axios
-            .post("http://localhost:5000/pages/getdataRemove", item)
+            .post("https://prepbytes-clone-backend-mehz.onrender.com/pages/getdataRemove", item)
             .then((res) => console.log(res.data));
 
         axios
-            .get("http://localhost:5000/pages/getcartdata")
+            .get("https://prepbytes-clone-backend-mehz.onrender.com/getcartdata")
             .then((res) => setCartItems(res.data));
     };
 
 
     return (
-        <>
+        <div className="payment-main">
             <h2 className="headcart">Cart</h2>
 
             <div className="cart-content">
@@ -71,7 +71,7 @@ const Payment = () => {
 
             </div>
 
-        </>
+        </div>
     );
 };
 

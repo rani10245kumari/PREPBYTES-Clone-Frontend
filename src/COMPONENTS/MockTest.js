@@ -28,7 +28,7 @@ function MockTest() {
 
 
     const handleBuyNow = async (item) => {
-        await axios.post("http://localhost:5000/pages/addtocart", item)
+        await axios.post("https://prepbytes-clone-backend-mehz.onrender.com/pages/addtocart", item)
             .then((response) => {
                 if (response.data.msg === "Item is added ") {
                     alert(response.data.msg)
@@ -120,7 +120,7 @@ function MockTest() {
 
                                                     </div>
                                                     <h5 className='pp'>${item.testPrice}</h5>
-                                                    <button className='buynow' onClick={(e) => handleBuyNow(e, item)}>Buy Now</button>
+                                                    <button className='buynow' onClick={() => handleBuyNow(item)}>Buy Now</button>
                                                 </div>
                                             )
                                         })}
@@ -149,7 +149,7 @@ function MockTest() {
                                                     <h4>{item.testTitle}</h4>
 
                                                     <h5 className='pp'>${item.testPrice}</h5>
-                                                    <button className='buynow' onClick={(e) => handleBuyNow(e, item)}>Buy Now</button>
+                                                    <button className='buynow' onClick={() => handleBuyNow(item)}>Buy Now</button>
 
 
                                                 </div>
