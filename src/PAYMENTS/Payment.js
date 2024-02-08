@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import './Payment.css'
-
+import { loadStripe } from '@stripe/stripe-js'
 
 
 const Payment = () => {
     const [cartItems, setCartItems] = useState([]);
-
+    const [sum, setSum] = useState(0);
 
     useEffect(() => {
         axios
@@ -25,6 +25,45 @@ const Payment = () => {
             .get("https://prepbytes-clone-backend-mehz.onrender.com/pages/getcartdata")
             .then((res) => setCartItems(res.data));
     };
+
+    useEffect(() => {
+        let value = 0;
+        cartItems.map((item) => (value += item.price));
+        setSum(value);
+    }, [cartItems]);
+
+    const stripePayment = async () => {
+        const stripe = await loadStripe(
+            "pk_test_51OFIomSI0xtOp9M4Lx8yK0ymk7DICp3GTuxeSCzdqrXq848U4YfGuir1l5NIU5NYyrgKk0vgYSQ6eF7OLBPHEYFJ00agxvY8do"
+        );
+
+        const body = {
+            Cartitem: cartItems,
+            Total: sum,
+        };
+        const headers = {
+            "Content-Type": "application/json",
+        };
+        const response = await fetch(
+            "https://prepbytes-clone-backend-mehz.onrender.com/out/create-checkout-session",
+            {
+                method: "POST",
+                headers: headers,
+                body: JSON.stringify(body),
+            }
+        );
+
+
+        const session = await response.json();
+
+        const result = stripe.redirectToCheckout({
+            sessionId: session.id,
+        });
+        if (result.error) {
+            console.log(result.error);
+        }
+    };
+
 
 
     return (
@@ -46,10 +85,10 @@ const Payment = () => {
                             <div className="childCartConatiner" key={index}>
 
 
-                                <p>{item.testTitle}</p>
+                                <p className="product-name">{item.testTitle}</p>
                                 <img src={item.testImg} alt="#" className="cart-img"></img>
                                 <p>{item.testCategory}</p>
-                                <p>{item.testPrice}</p>
+                                <p className="price">{item.testPrice}</p>
 
                                 <button
                                     className="RemoveButtton"
@@ -60,8 +99,8 @@ const Payment = () => {
                             </div>
                         ))}
 
-                    <div className="buy">
-                        <button className="buyNow">
+                    <div className="buyc">
+                        <button className="checkout" onClick={stripePayment}>
                             checkout
                         </button>
                     </div>

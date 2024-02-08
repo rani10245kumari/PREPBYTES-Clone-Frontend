@@ -2,8 +2,7 @@ import React from 'react'
 import { useEffect, useState } from 'react'
 import axios from 'axios'
 import '../COMPONENT-CSS/Mock-test.css'
-import { useDispatch, useSelector } from 'react-redux'
-import { confirmOrder } from '../ReduxSlice/Slice'
+import { useSelector } from 'react-redux'
 import Loader from './Loader'
 import { useNavigate } from 'react-router-dom'
 
@@ -11,14 +10,14 @@ import { useNavigate } from 'react-router-dom'
 function MockTest() {
 
     const [data, setData] = useState([])
-    const dispatch = useDispatch()
+
     const { User } = useSelector((state) => state.AppUser.UserDetails);
     const [isLoading, setIsloading] = useState(false)
     const navi = useNavigate();
 
     useEffect(() => {
         setIsloading(true)
-        axios.get("http://localhost:5000/pages/mockdatasfind ").then(response => { setData(response.data) })
+        axios.get("https://prepbytes-clone-backend-mehz.onrender.com/pages/mockdatasfind ").then(response => { setData(response.data) })
         setIsloading(false)
     }, [])
 

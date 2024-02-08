@@ -1,13 +1,17 @@
+.mobileNavbar__Container {
+    display: none;
+}
+
 .header {
     width: 100%;
-    height: 15vh;
+    height: 8vh;
     box-shadow: 0 3px 6px rgba(0, 0, 0, .05);
     position: sticky;
     z-index: 500;
 }
 
 .logo {
-    height: 9vh;
+    height: 12vh;
     margin-right: 0;
     padding-top: 7px;
     padding-left: 5%;
@@ -165,12 +169,12 @@ a {
     top: 130%;
     min-width: max-content;
     width: 120%;
-    line-height:3.8;
+    line-height: 3.8;
     color: #5a5a5a;
     background-color: #fff;
-    border-top: 0.1px solid rgba(0,0,0,.07);
+    border-top: 0.1px solid rgba(0, 0, 0, .07);
     font-weight: 400;
-    border-bottom: 0.1px solid rgba(0,0,0,.07);
+    border-bottom: 0.1px solid rgba(0, 0, 0, .07);
 }
 
 .userDropownContainer .dropDownContainer__Item {
@@ -184,4 +188,104 @@ a {
     font-weight: 400;
     gap: 10px;
     border-bottom: 1px solid #3e4041;
+}
+
+/* =========================MOBILE NAVBAR CONTAINER =============
+===============================*/
+.mobileNavbar__Conainer {
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 320px;
+    height: 640px;
+    background-color: #fff;
+    overflow: hidden;
+    overflow-y: auto;
+    display: none;
+}
+
+.mobileNavbar__Conainer .mobilenav__items,
+.mobileNavbar__Conainer .mobileNav__UserBox {
+    display: none;
+}
+
+.mobileNav__UserBox {
+    height: 120px;
+}
+
+.mobileNav__userGreeting {
+    border-bottom: 1px solid #767779;
+    width: 100%;
+    padding-left: 1em;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    height: 60px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #3e4041;
+}
+
+.mobileNav__userGreeting i {
+    font-size: 20px;
+}
+
+.mobilenav__items {
+    display: block;
+    height: 50px;
+    text-decoration: none;
+    width: 100%;
+    font-weight: 500;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 1em;
+    font-size: 16px;
+    color: #424242;
+}
+
+.mobilenav__items:hover {
+    color: #4b8ce8;
+    cursor: pointer;
+}
+
+.Mobilenav__loginSignUpLink {
+    color: #f78077;
+    font-size: 20px;
+}
+
+
+.hampburger {
+    display: none;
+}
+
+.header__hamMenuButton {
+    font-size: 22px;
+    color: rgb(24, 107, 225);
+    display: none;
+    cursor: pointer;
+}
+
+
+/*=========================MEDIA QUERRY===================
+===========================================*/
+
+@media screen and (max-width: 650px) {
+    .header {
+        display: none;
+    }
+
+    .mobileNavbar__Container {
+        display: block;
+    }
+
+    .hampburger {
+        display: block;
+        float: right;
+    }
+
 }
