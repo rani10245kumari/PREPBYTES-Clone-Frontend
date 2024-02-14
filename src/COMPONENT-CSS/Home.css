@@ -330,3 +330,276 @@
     top: 20vh;
     height: 280px;
 }
+
+
+/*=========================MEDIA QUERRY===================
+===========================================*/
+
+@media screen and (max-width: 665px) {
+
+    .main {
+        border: 2px solid green;
+        flex-direction: column-reverse;
+
+    }
+
+    .big-img {
+        margin-top: 2px;
+        width: 100%;
+    }
+
+    .heading {
+        width: 100%;
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0px;
+        padding-left: 20px;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+    }
+
+    .heading h3 {
+        font-weight: 500;
+        font-size: 22px;
+    }
+
+    .heading h4 {
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 0px;
+    }
+
+    .heading h5 {
+        font-weight: 500;
+        font-size: 21px;
+    }
+
+    .brand {
+        width: 100%;
+        border: 2px solid blue;
+    }
+
+    .brand img {
+        height: 30px;
+    }
+
+    /*==================================coding=Journey==============*/
+    .coding-journey {
+        display: flex;
+        background-color: #f8fafa;
+        margin-top: 2vh;
+        background-image: url(https://prepbytes.netlify.app/static/media/StudentIMG.c3920ebc7aa5c1485172.svg);
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: 500px;
+        justify-content: center;
+    }
+
+    .cod-img {
+        display: none;
+    }
+
+    .code-jrny-right {
+        display: flex;
+        flex-direction: column;
+        gap: 5vh;
+        background: #f8fafabb;
+        width: 100%;
+    }
+
+    .code-jrny-right h1 {
+        font-size: 12px;
+        text-align: center;
+    }
+
+
+
+    /*=======================ALLL BOXES=================*/
+
+    .boxx {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .boxone {
+        width: 48%;
+    }
+
+    .boxone h3 {
+        font-size: 14px;
+    }
+
+
+    .box1 {
+        width: 180px;
+        display: flex;
+    }
+
+    .box1 p {
+        margin-left: 20px;
+        padding: 10px 0px;
+        font-weight: 500;
+        width: 70%;
+        font-size: 12px;
+    }
+
+    .box1 img {
+        margin-left: -10px;
+    }
+
+    .arrow-right {
+        left: 1vw;
+        top: 20vh;
+        height: 10vh;
+    }
+
+    .arrow-left {
+        top: 20vh;
+        left: 15vw;
+        height: 10vh;
+    }
+
+    .archive {
+        height: 20vh;
+    }
+
+    /*=======================COURSE BUY===============
+============================================*/
+
+    .course-buy {
+        min-height: 170vh;
+    }
+
+    .course-buy h2 {
+        font-size: 22px;
+    }
+
+    .course-purchase {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        gap: 2vh;
+        align-items: center;
+    }
+
+    .cards {
+        position: absolute;
+        z-index: 10;
+        height: 46vh;
+        padding: 0 1em;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .cardMain {
+        border: 2px solid red;
+        height: 46vh;
+        position: relative;
+        width: 15em;
+        top: 9vh;
+    }
+
+    .sect1 {
+        height: 20vh;
+        position: absolute;
+        z-index: -2;
+        top: -8vh;
+        width: 25vw;
+        left: 30%;
+    }
+
+    .sect1a {
+        width: 95%;
+        height: 25vh;
+        z-index: 10;
+
+    }
+
+    .circle {
+        width: 40px;
+        height: 40px;
+        bottom: 0px;
+        top: 48%;
+        left: 93%;
+    }
+
+    /*==========================GRID CONTAINER DESIGN--------------------
+------------------------------------------*/
+    .grid-main-container {
+        display: flex;
+        justify-content: space-around;
+        background-color: #ebecec;
+        min-height: 50vh;
+    }
+
+    .grid-container-left {
+        width: 35%;
+        border: 2px solid red;
+    }
+
+    .grid-container-left h2 {
+        color: #3e4041;
+        font-size: 35px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    .grid-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 5vh;
+    }
+
+    .grid-l {
+        height: 14vh;
+        width: 34vw;
+        background-color: white;
+        box-shadow: 0 3px 25px rgba(0, 0, 0, .10196078431372549);
+        border-radius: 5px;
+    }
+
+    .grid-l img {
+        position: absolute;
+        height: 10vh;
+        margin-left: -30px;
+    }
+
+    .grid-l p {
+        font-size: 16px;
+        width: 75%;
+        margin-left: 5vw;
+        color: #707070;
+        line-height: 1.6;
+    }
+
+    /*------------------------grid right container---------------*/
+    .grid-container-right {
+        display: flex;
+        border: 2px solid rgb(0, 255, 0);
+        width: 45%;
+    }
+
+    .grid-right-2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* .grid-right {
+    border: 2px solid rgb(5, 43, 10);
+} */
+
+    .grid-right img {
+        height: 300px;
+        width: 100%;
+    }
+
+    #grid-r1 {
+        position: relative;
+        top: 20vh;
+        height: 280px;
+    }
+
+}

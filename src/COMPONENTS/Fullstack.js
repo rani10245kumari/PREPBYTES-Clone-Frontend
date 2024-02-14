@@ -55,7 +55,7 @@ function Fullstack() {
 
                     </div>
                 </div>
-                <div className='box3'>
+                <div className='boxx3'>
                     <h5>₹ 30000</h5>
                     <div className='box3-A'>
                         <button className='box3-bttn'>Enroll Now</button>

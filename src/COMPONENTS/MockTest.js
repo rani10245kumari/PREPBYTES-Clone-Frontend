@@ -1,45 +1,72 @@
-import React from 'react'
-import { useEffect, useState } from 'react'
-import axios from 'axios'
-import '../COMPONENT-CSS/Mock-test.css'
-import { useSelector } from 'react-redux'
-import Loader from './Loader'
-import { useNavigate } from 'react-router-dom'
-
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
+import '../COMPONENT-CSS/Mock-test.css';
+// import { useSelector } from 'react-redux';
+import Loader from './Loader';
+import { loadStripe } from '@stripe/stripe-js';
 
 function MockTest() {
-
-    const [data, setData] = useState([])
-
-    const { User } = useSelector((state) => state.AppUser.UserDetails);
-    const [isLoading, setIsloading] = useState(false)
-    const navi = useNavigate();
+    const [data, setData] = useState([]);
+    const [cartItems, setCartItems] = useState([]);
+    const [isLoading, setIsloading] = useState(false);
+    // const { User } = useSelector((state) => state.AppUser.UserDetails);
 
     useEffect(() => {
-        setIsloading(true)
-        axios.get("https://prepbytes-clone-backend-mehz.onrender.com/pages/mockdatasfind ").then(response => { setData(response.data) })
-        setIsloading(false)
-    }, [])
-
-    console.log(data)
-    console.log(User)
-
-
-
-    const handleBuyNow = async (item) => {
-        await axios.post("https://prepbytes-clone-backend-mehz.onrender.com/pages/addtocart", item)
-            .then((response) => {
-                if (response.data.msg === "Item is added ") {
-                    alert(response.data.msg)
-                    navi('/payment')
-                }
-                else {
-                    alert(response.data.msg)
-                }
-
+        setIsloading(true);
+        axios.get("https://prepbytes-clone-backend-mehz.onrender.com/pages/mockdatasfind")
+            .then(response => {
+                setData(response.data);
+                setIsloading(false); // Move this inside the then block to ensure it's called after data is set
             })
+            .catch(error => {
+                console.error('Error fetching data:', error);
+                setIsloading(false);
+            });
+    }, []);
 
-    }
+    useEffect(() => {
+        axios.get("https://prepbytes-clone-backend-mehz.onrender.com/pages/getcartdata")
+            .then((res) => setCartItems(res.data))
+            .catch((err) => console.error(err));
+    }, []);
+
+    const stripePayment = async () => {
+        const stripe = await loadStripe(
+            "pk_test_51OFIomSI0xtOp9M4Lx8yK0ymk7DICp3GTuxeSCzdqrXq848U4YfGuir1l5NIU5NYyrgKk0vgYSQ6eF7OLBPHEYFJ00agxvY8do"
+        );
+
+        const body = {
+            Cartitem: cartItems,
+        };
+
+        const headers = {
+            "Content-Type": "application/json",
+        };
+
+        try {
+            const response = await fetch(
+                "http://localhost:5000/out/create-checkout-session",
+                {
+                    method: "POST",
+                    headers: headers,
+                    body: JSON.stringify(body),
+                }
+            );
+
+            const session = await response.json();
+
+            const result = stripe.redirectToCheckout({
+                sessionId: session.id,
+            });
+
+            if (result.error) {
+                console.error(result.error);
+            }
+        } catch (error) {
+            console.error('Error during payment:', error);
+        }
+    };
+
 
     return (
         <>
@@ -90,7 +117,7 @@ function MockTest() {
                                                         </div>
                                                     </div>
                                                     <h5 className='pp'>${item.testPrice}</h5>
-                                                    <button className='buynow' onClick={() => handleBuyNow(item)}>Buy Now</button>
+                                                    <button className='buynow' onClick={stripePayment}>Buy Now</button>
                                                 </div>
                                             )
                                         })}
@@ -119,7 +146,7 @@ function MockTest() {
 
                                                     </div>
                                                     <h5 className='pp'>${item.testPrice}</h5>
-                                                    <button className='buynow' onClick={() => handleBuyNow(item)}>Buy Now</button>
+                                                    <button className='buynow' onClick={() => stripePayment}>Buy Now</button>
                                                 </div>
                                             )
                                         })}
@@ -148,7 +175,7 @@ function MockTest() {
                                                     <h4>{item.testTitle}</h4>
 
                                                     <h5 className='pp'>${item.testPrice}</h5>
-                                                    <button className='buynow' onClick={() => handleBuyNow(item)}>Buy Now</button>
+                                                    <button className='buynow' onClick={() => stripePayment}>Buy Now</button>
 
 
                                                 </div>

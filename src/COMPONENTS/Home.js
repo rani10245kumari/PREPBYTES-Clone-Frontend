@@ -28,7 +28,7 @@ function Home() {
 
             <div className='coding-journey'>
                 <div className='code-jrny-left'>
-                    <img src='images/study-per.svg' alt='#'></img>
+                    <img src='images/study-per.svg' alt='#' className='cod-img'></img>
                 </div>
                 <div className='code-jrny-right'>
                     <h1>How PrepBytes Mentorship driven Personalised Learning work?</h1>
@@ -99,7 +99,7 @@ function Home() {
                     </div>
 
                     <div>
-                        <img src='/images/achievement.svg' alt='#'></img>
+                        <img src='/images/achievement.svg' alt='#' className='archive'></img>
                     </div>
                 </div>
 
