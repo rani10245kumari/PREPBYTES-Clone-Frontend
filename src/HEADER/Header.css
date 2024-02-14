@@ -43,7 +43,10 @@ a {
 }
 
 .all-content {
+    border: 2px solid blue;
     display: flex;
+    align-items: center;
+    justify-content: flex-start;
     gap: 3vw;
     position: absolute;
     right: 6vw;
