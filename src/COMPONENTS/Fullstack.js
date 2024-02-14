@@ -58,7 +58,7 @@ function Fullstack() {
                 <div className='boxx3'>
                     <h5>₹ 30000</h5>
                     <div className='box3-A'>
-                        <button className='box3-bttn'>Enroll Now</button>
+                        <button className='box3-bttn' onClick={() => setCheckpayment({ testTitle: "Enroll", testPrice: 3000 })}>Enroll Now</button>
                         <button className='box3-bttn2'>Try for free</button>
                     </div>
                 </div>

@@ -3,12 +3,19 @@ import axios from 'axios';
 import '../COMPONENT-CSS/Mock-test.css';
 // import { useSelector } from 'react-redux';
 import Loader from './Loader';
-import { loadStripe } from '@stripe/stripe-js';
+// import { loadStripe } from '@stripe/stripe-js';
+import usePAYMENT from './usePayment'
+
+
 
 function MockTest() {
+    const [checkpayment, setCheckpayment] = useState({});
+    // console.log(checkpayment);
+    const payment = usePAYMENT(checkpayment);
     const [data, setData] = useState([]);
     const [cartItems, setCartItems] = useState([]);
     const [isLoading, setIsloading] = useState(false);
+
     // const { User } = useSelector((state) => state.AppUser.UserDetails);
 
     useEffect(() => {
@@ -30,42 +37,42 @@ function MockTest() {
             .catch((err) => console.error(err));
     }, []);
 
-    const stripePayment = async () => {
-        const stripe = await loadStripe(
-            "pk_test_51OFIomSI0xtOp9M4Lx8yK0ymk7DICp3GTuxeSCzdqrXq848U4YfGuir1l5NIU5NYyrgKk0vgYSQ6eF7OLBPHEYFJ00agxvY8do"
-        );
+    // const stripePayment = async () => {
+    //     const stripe = await loadStripe(
+    //         "pk_test_51OFIomSI0xtOp9M4Lx8yK0ymk7DICp3GTuxeSCzdqrXq848U4YfGuir1l5NIU5NYyrgKk0vgYSQ6eF7OLBPHEYFJ00agxvY8do"
+    //     );
 
-        const body = {
-            Cartitem: cartItems,
-        };
+    //     const body = {
+    //         Cartitem: cartItems,
+    //     };
 
-        const headers = {
-            "Content-Type": "application/json",
-        };
+    //     const headers = {
+    //         "Content-Type": "application/json",
+    //     };
 
-        try {
-            const response = await fetch(
-                "http://localhost:5000/out/create-checkout-session",
-                {
-                    method: "POST",
-                    headers: headers,
-                    body: JSON.stringify(body),
-                }
-            );
+    //     try {
+    //         const response = await fetch(
+    //             "http://localhost:5000/out/create-checkout-session",
+    //             {
+    //                 method: "POST",
+    //                 headers: headers,
+    //                 body: JSON.stringify(body),
+    //             }
+    //         );
 
-            const session = await response.json();
+    //         const session = await response.json();
 
-            const result = stripe.redirectToCheckout({
-                sessionId: session.id,
-            });
+    //         const result = stripe.redirectToCheckout({
+    //             sessionId: session.id,
+    //         });
 
-            if (result.error) {
-                console.error(result.error);
-            }
-        } catch (error) {
-            console.error('Error during payment:', error);
-        }
-    };
+    //         if (result.error) {
+    //             console.error(result.error);
+    //         }
+    //     } catch (error) {
+    //         console.error('Error during payment:', error);
+    //     }
+    // };
 
 
     return (
@@ -90,11 +97,11 @@ function MockTest() {
                                 {
                                     data.length > 0 && <>
 
-                                        {data?.filter((item) => item.testCategory === "FeaturedMock").map(item => {
+                                        {data?.filter((item) => item.testCategory === "FeaturedMock").map((item, index) => {
 
                                             return (
                                                 // <div className='item-container' onClick={() => Navigate(`/product/${item.id}`)}>
-                                                <div className='mock1'>
+                                                <div className='mock1' key={index}>
                                                     <div className='mock-icon'>
                                                         <img src='/images/mock-test-left-icon.svg' alt='#'></img>
                                                         <img src='/images/mock-test-right-icon.svg' alt='#'></img>
@@ -117,7 +124,7 @@ function MockTest() {
                                                         </div>
                                                     </div>
                                                     <h5 className='pp'>${item.testPrice}</h5>
-                                                    <button className='buynow' onClick={stripePayment}>Buy Now</button>
+                                                    <button className='buynow' onClick={() => setCheckpayment(item)}>Buy Now</button>
                                                 </div>
                                             )
                                         })}
@@ -125,8 +132,8 @@ function MockTest() {
                                 }
                             </div>
                         </div>
-                        {/*------------topic wise mock test-------------------------
-            --------------------------------------*/}
+                        ------------topic wise mock test-------------------------
+                        --------------------------------------
                         <div className='featured-mock'>
                             <p>Featured Mock Tests</p>
                             <h2>PAST MOCK TEST</h2>
@@ -146,7 +153,7 @@ function MockTest() {
 
                                                     </div>
                                                     <h5 className='pp'>${item.testPrice}</h5>
-                                                    <button className='buynow' onClick={() => stripePayment}>Buy Now</button>
+                                                    <button className='buynow'>Buy Now</button>
                                                 </div>
                                             )
                                         })}
@@ -175,7 +182,7 @@ function MockTest() {
                                                     <h4>{item.testTitle}</h4>
 
                                                     <h5 className='pp'>${item.testPrice}</h5>
-                                                    <button className='buynow' onClick={() => stripePayment}>Buy Now</button>
+                                                    <button className='buynow'>Buy Now</button>
 
 
                                                 </div>
