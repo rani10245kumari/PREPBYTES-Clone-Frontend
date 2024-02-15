@@ -23,7 +23,7 @@ function PAYMENT(pay) {
             "Content-Type": "application/json",
         };
         const response = await fetch(
-            "http://localhost:5000/out/create-checkout-session",
+            "https://prepbytes-clone-backend-mehz.onrender.com/out/create-checkout-session",
             {
                 method: "POST",
                 headers: headers,

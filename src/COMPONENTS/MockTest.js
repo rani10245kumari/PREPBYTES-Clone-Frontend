@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import '../COMPONENT-CSS/Mock-test.css';
-// import { useSelector } from 'react-redux';
 import Loader from './Loader';
-// import { loadStripe } from '@stripe/stripe-js';
 import usePAYMENT from './usePayment'
 
 
@@ -36,43 +34,6 @@ function MockTest() {
             .then((res) => setCartItems(res.data))
             .catch((err) => console.error(err));
     }, []);
-
-    // const stripePayment = async () => {
-    //     const stripe = await loadStripe(
-    //         "pk_test_51OFIomSI0xtOp9M4Lx8yK0ymk7DICp3GTuxeSCzdqrXq848U4YfGuir1l5NIU5NYyrgKk0vgYSQ6eF7OLBPHEYFJ00agxvY8do"
-    //     );
-
-    //     const body = {
-    //         Cartitem: cartItems,
-    //     };
-
-    //     const headers = {
-    //         "Content-Type": "application/json",
-    //     };
-
-    //     try {
-    //         const response = await fetch(
-    //             "http://localhost:5000/out/create-checkout-session",
-    //             {
-    //                 method: "POST",
-    //                 headers: headers,
-    //                 body: JSON.stringify(body),
-    //             }
-    //         );
-
-    //         const session = await response.json();
-
-    //         const result = stripe.redirectToCheckout({
-    //             sessionId: session.id,
-    //         });
-
-    //         if (result.error) {
-    //             console.error(result.error);
-    //         }
-    //     } catch (error) {
-    //         console.error('Error during payment:', error);
-    //     }
-    // };
 
 
     return (

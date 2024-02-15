@@ -1,6 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../COMPONENT-CSS/Fullstack.css';
+import usePAYMENT from './usePayment'
+
+
 function Fullstack() {
+    const [checkpayment, setCheckpayment] = useState({});
+
+    const payment = usePAYMENT(checkpayment);
     return (
         <div>
             <div className='container1'>
