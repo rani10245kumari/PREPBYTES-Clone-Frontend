@@ -1,7 +1,7 @@
 
 
 import { loadStripe } from '@stripe/stripe-js'
-
+import axios from 'axios';
 
 
 function PAYMENT(pay) {
@@ -28,8 +28,17 @@ function PAYMENT(pay) {
                 method: "POST",
                 headers: headers,
                 body: JSON.stringify(body),
+
             }
+
         );
+        await axios.post(
+            "http://localhost:5000/pages/dashboardpush",
+            pay
+        );
+
+
+
 
 
         const session = await response.json();
@@ -41,7 +50,9 @@ function PAYMENT(pay) {
             console.log(result.error);
         }
     };
+
     StripePayment()
+
 }
 
 export default PAYMENT

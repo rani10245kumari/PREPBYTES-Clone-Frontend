@@ -93,8 +93,8 @@ function MockTest() {
                                 }
                             </div>
                         </div>
-                        ------------topic wise mock test-------------------------
-                        --------------------------------------
+                        {/* ------------topic wise mock test-------------------------
+                        -------------------------------------- */}
                         <div className='featured-mock'>
                             <p>Featured Mock Tests</p>
                             <h2>PAST MOCK TEST</h2>

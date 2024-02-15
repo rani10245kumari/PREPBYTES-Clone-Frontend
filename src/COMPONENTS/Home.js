@@ -1,6 +1,14 @@
 import React from 'react'
 import '../COMPONENT-CSS/Home.css'
+import { Link } from 'react-router-dom';
 function Home() {
+
+    function scrollToSection(wantTobuy) {
+        const targetElement = document.getElementById(wantTobuy);
+        if (targetElement) {
+            targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    }
     return (
         <div>
 
@@ -10,7 +18,7 @@ function Home() {
                     <h3>Start your journey of success</h3>
                     <h4>Personalised Coding Programs<br></br>to make coding easier for you</h4>
                     <h5>Want to know how PrepBytes can help you?</h5>
-                    <button className='knowmore'>know More</button>
+                    <button className='knowmore' onClick={() => scrollToSection('wantTobuy')}>know More</button>
                 </div>
                 <div className='big-img'>
                     <img src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/homepage/Masterhead(web).svg' alt='#'></img>
@@ -106,7 +114,7 @@ function Home() {
             </div>
 
             {/*-------------------I WANT TO BUY COURSE---------------*/}
-            <div className='course-buy'>
+            <div className='course-buy' id='wantTobuy'>
                 <h2>I WANT</h2>
                 <div className='course-purchase'>
 
@@ -115,9 +123,11 @@ function Home() {
                         <div className='cards'>
                             <img src='/images/sect-1-a.webp' className='sect1a' alt='#'></img>
                             <h5 className='S1'>PREPARE FOR CAMPUS PLACEMENTS</h5>
-                            <div className='circle'>
-                                <img src='/images/small-arrow.svg' alt='#'></img>
-                            </div>
+                            <Link to='/FullStackProgram'>
+                                <div className='circle'>
+                                    <img src='/images/small-arrow.svg' alt='#'></img>
+                                </div>
+                            </Link>
                         </div>
                     </div>
 
@@ -127,9 +137,11 @@ function Home() {
                         <div className='cards'>
                             <img src='/images/sect-2-b.webp' alt='#' className='sect1a'></img>
                             <h5 className='S2'>MASTER COMPETITIVE PROGRAMMING</h5>
-                            <div className='circle'>
-                                <img src='/images/small-arrow.svg' alt='#'></img>
-                            </div>
+                            <Link to='/MasterCompetitiveProgramming'>
+                                <div className='circle'>
+                                    <img src='/images/small-arrow.svg' alt='#'></img>
+                                </div>
+                            </Link>
                         </div>
                     </div>
 
@@ -139,9 +151,11 @@ function Home() {
                         <div className='cards'>
                             <img src='/images/sect3-c.webp' alt='#' className='sect1a'></img>
                             <h5 className='S3'>BUILD DEVELOPMENT PROJECTS</h5>
-                            <div className='circle'>
-                                <img src='/images/small-arrow.svg' alt='#'></img>
-                            </div>
+                            <Link to='/project/html'>
+                                <div className='circle'>
+                                    <img src='/images/small-arrow.svg' alt='#'></img>
+                                </div>
+                            </Link>
                         </div>
                     </div>
 
@@ -183,6 +197,38 @@ function Home() {
                     </div>
 
                 </div>
+            </div>
+
+            {/*-----------founder container--------------*/}
+            <div className='founder'>
+
+                <div className='founder-left'>
+                    <div className='founder-left1'>
+                        <img src='/images/mamta_mentor.png' alt='#' className='mamta'></img>
+                        <p className='mamtaname'>Mamta Kumari</p>
+                        <p className='mamta2'>Co-Founder PrepBytes</p>
+                        <img src='/images/Amazon+sam.png' alt='#'></img>
+
+                    </div>
+                </div>
+
+                <div className='founder-right'>
+                    <h2>Attend Free sessions with industry experts and get valuable guidance</h2>
+                    <h3>How to master competitive coding?</h3>
+                    <button className='founder-konwmorebtn'>knowmore</button>
+                    <hr className='hrline'></hr>
+                    <h3>How to crack coding interviews?</h3>
+                    <button className='founder-konwmorebtn'>knowmore</button>
+                </div>
+
+            </div>
+
+            {/*----------big poster-------------*/}
+            <div className='bigposter'>
+                <img src='/images/bigposter.webp' alt='#'></img>
+            </div>
+            <div className='bigposter2'>
+                <img src='/images/bigposter2.png' alt='#'></img>
             </div>
 
         </div >

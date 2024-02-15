@@ -331,6 +331,107 @@
     height: 280px;
 }
 
+/*-------------------founder-container----------------*/
+.founder {
+    background: #fdf0d7;
+    display: flex;
+    gap: 8vw;
+    justify-content: center;
+    padding: 2em 0;
+
+}
+
+.founder-left {
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 3px 32px rgba(0, 0, 0, .161);
+    min-height: 550px;
+    padding: 1em;
+    position: relative;
+    text-align: center;
+    width: 420px;
+}
+
+.founder-left1 {
+    background: url('/public/images/founderBackground.svg');
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    height: 360px;
+    width: 100%;
+}
+
+.mamta {
+    height: 100%;
+}
+
+
+.mamtaname {
+    color: #f78077;
+    font-size: 28px;
+}
+
+.mamta2 {
+    color: #858585;
+    font-size: 22px;
+}
+
+.founder-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 45%;
+}
+
+.founder-right h2 {
+    color: #f78077;
+    font-size: 2.5vw;
+    font-weight: 500;
+    font-weight: 600;
+    width: 90%;
+}
+
+.founder-right h3 {
+    color: #858585;
+    font-size: 2vw;
+    font-weight: 500;
+    margin: 1em 0 0.7em;
+    width: 80%;
+}
+
+.founder-konwmorebtn {
+    background: #00a5ec;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 20px;
+    padding: 0.7em;
+    text-align: center;
+    text-decoration: none;
+    width: 200px;
+}
+
+.hrline {
+    border-color: #b6b6b6;
+    border-width: 1px;
+    margin-top: 5vh;
+    width: 100%;
+}
+
+.bigposter {
+    align-items: center;
+    background: #bcf2fb;
+    display: flex;
+    justify-content: center;
+    padding: 2em 0 0;
+}
+
+
+
 
 /*=========================MEDIA QUERRY===================
 ===========================================*/
