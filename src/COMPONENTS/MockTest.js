@@ -14,6 +14,9 @@ function MockTest() {
     const [cartItems, setCartItems] = useState([]);
     const [isLoading, setIsloading] = useState(false);
 
+    console.log(payment);
+    console.log(cartItems);
+
     // const { User } = useSelector((state) => state.AppUser.UserDetails);
 
     useEffect(() => {
