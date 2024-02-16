@@ -1,0 +1,30 @@
+.loading {
+    background-color: white;
+    height: 90vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    transition: 800ms;
+    position: fixed;
+    top: 0;
+    z-index: 401;
+}
+
+.loader__LOGO {
+    width: 5em;
+    animation: beat 1s ease infinite;
+}
+
+@keyframes beat {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(.8);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

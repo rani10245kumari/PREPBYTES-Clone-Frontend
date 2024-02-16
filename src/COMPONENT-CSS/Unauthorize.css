@@ -1,0 +1,39 @@
+.UnauthorizedPageContainer {
+    background-image: url("./Assets/download.svg");
+    background-size: 550px;
+    background-position: top;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    gap: 5px;
+    position: relative;
+    padding-bottom: 5em;
+}
+
+.UnauthorizedPageContainer .knowMoreButton {
+    background-color: transparent;
+    border: 1px solid #f78077;
+    width: 300px;
+    color: #f78077;
+    transition: all 0.3s ease-in-out;
+}
+
+.UnauthorizedPageContainer .knowMoreButton:hover {
+    cursor: pointer;
+    background-color: #f78077;
+    color: white;
+}
+
+.unAuthMsg {
+    color: #707070;
+    font-weight: 400;
+    width: 100%;
+    text-align: center;
+    color: tomato;
+    font-size: 30px;
+    user-select: none;
+}
