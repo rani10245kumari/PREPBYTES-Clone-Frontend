@@ -1,0 +1,170 @@
+.Dashbord__Container {
+    width: 100%;
+    height: calc(100vh - 100px);
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dashboard__sideBar {
+    background-color: white;
+    position: relative;
+    top: 0;
+    box-shadow: 10px 0 10px -5px rgb(33 35 38/10%);
+    width: 80px;
+    height: 100%;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.activeSidebar {
+    background-color: white;
+    position: relative;
+    top: 0;
+    box-shadow: 10px 0 10px -5px rgb(33 35 38/10%);
+    height: 100%;
+    width: 300px;
+    transition: all 0.5s ease-in-out;
+
+}
+
+@keyframes fadeINText {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+.dashboard__sidebarHamMenu {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    transform: translateY(-50%)
+}
+
+.Dashboard_sideBar__item {
+    margin-top: 20px;
+    height: 50px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 1em;
+    font-size: 20px;
+    gap: 20px;
+    color: #3e4041;
+
+}
+
+.Dashboard_sideBar__item.activeItem {
+    background-color: #ecf9ff;
+    color: #5393ec;
+    border-right: 3px solid #5393ec;
+
+}
+
+.sidebar_item_text {
+    font-size: 16px;
+    font-weight: 600;
+    width: 90%;
+    animation: fadeINText 0.5 ease-in-out .9s;
+}
+
+.dashboard__sideBar .Dashboard_sideBar__item .sidebar_item_text {
+    display: none;
+}
+
+.dashboard__courseDetails {
+    height: 100%;
+    overflow: hidden;
+    overflow-y: auto;
+    width: calc(100% - 80px);
+    padding: 2em 4em;
+}
+
+.CourseDetails__headingContainer {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.329);
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.CourseDetails__tabText {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    color: #00a5ec;
+    font-weight: 500;
+    border-bottom: 3px solid #00a5ec;
+}
+
+.courseDetails__cardContainer {
+    margin-top: 20px;
+    min-height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(304px, 304px));
+    padding-top: 2em;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.courseDetails__card {
+    box-shadow: 0 4px 0.9em #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    background: transparent linear-gradient(180deg, #fff, #fff 24%, #fff 38%, hsla(0, 0%, 100%, .03137254901960784)) 0 0 no-repeat padding-box;
+    border: 1px solid #ededed;
+    border-radius: 10px;
+    width: 304px;
+    height: 320px;
+    background-image: url("https://prepbytes-misc-images.s3.ap-south-1.amazonaws.com/bg-card+(1).png");
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.card__itemText {
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.CourseDetails_cardICON {
+    width: 70px;
+}
+
+.card__itemText:nth-child(2) {
+    font-weight: 500;
+}
+
+.card__itemText:nth-child(3) {
+    font-weight: 700;
+    color: #707070;
+}
+
+.card__itemText:nth-child(4) {
+    font-size: 14px;
+    color: #f78077;
+    font-weight: 400;
+}

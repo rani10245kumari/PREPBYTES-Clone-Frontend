@@ -16,7 +16,6 @@ import Javascript from '../COMPONENTS/PROJECT/Javascript'
 import Reactjs from '../COMPONENTS/PROJECT/React'
 import Node from '../COMPONENTS/PROJECT/Node'
 import Mongodb from '../COMPONENTS/PROJECT/Mongodb'
-import Payment from '../PAYMENTS/Payment'
 import Dashboard from '../COMPONENTS/Dashboard'
 function Routing() {
     return (
@@ -39,7 +38,6 @@ function Routing() {
                 <Route path='/project/reactjs' element={<Reactjs></Reactjs>}></Route>
                 <Route path='/project/node' element={<Node></Node>}></Route>
                 <Route path='/project/mongodb' element={<Mongodb></Mongodb>}></Route>
-                <Route path='/payment' element={<Payment></Payment>}></Route>
                 <Route path='/dashboard' element={<Dashboard></Dashboard>}></Route>
             </Routes>
 
