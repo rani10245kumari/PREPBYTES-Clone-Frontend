@@ -1,5 +1,5 @@
 .UnauthorizedPageContainer {
-    background-image: url("./Assets/download.svg");
+    /* background-image: url('/images/download.svg'); */
     background-size: 550px;
     background-position: top;
     background-repeat: no-repeat;

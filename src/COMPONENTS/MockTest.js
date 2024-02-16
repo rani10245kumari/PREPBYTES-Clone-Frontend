@@ -17,6 +17,9 @@ function MockTest() {
     console.log(payment);
     console.log(cartItems);
 
+
+
+
     // const { User } = useSelector((state) => state.AppUser.UserDetails);
 
     useEffect(() => {
@@ -117,7 +120,7 @@ function MockTest() {
 
                                                     </div>
                                                     <h5 className='pp'>${item.testPrice}</h5>
-                                                    <button className='buynow'>Buy Now</button>
+                                                    <button className='buynow' onClick={() => setCheckpayment(item)}>Buy Now</button>
                                                 </div>
                                             )
                                         })}
@@ -146,7 +149,7 @@ function MockTest() {
                                                     <h4>{item.testTitle}</h4>
 
                                                     <h5 className='pp'>${item.testPrice}</h5>
-                                                    <button className='buynow'>Buy Now</button>
+                                                    <button className='buynow' onClick={() => setCheckpayment(item)}>Buy Now</button>
 
 
                                                 </div>
