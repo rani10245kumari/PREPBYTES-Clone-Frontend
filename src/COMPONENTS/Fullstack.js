@@ -7,6 +7,8 @@ function Fullstack() {
     const [checkpayment, setCheckpayment] = useState({});
 
     const payment = usePAYMENT(checkpayment);
+    console.log(payment);
+
     return (
         <div>
             <div className='container1'>
