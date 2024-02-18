@@ -3,24 +3,23 @@ import axios from 'axios';
 import '../COMPONENT-CSS/Mock-test.css';
 import Loader from './Loader';
 import usePAYMENT from './usePayment'
-
+import { useSelector } from 'react-redux'
+import { useNavigate } from 'react-router-dom';
 
 
 function MockTest() {
     const [checkpayment, setCheckpayment] = useState({});
-    // console.log(checkpayment);
+    const navigate = useNavigate()
     const payment = usePAYMENT(checkpayment);
+    console.log(payment)
     const [data, setData] = useState([]);
     const [cartItems, setCartItems] = useState([]);
+    console.log(cartItems);
     const [isLoading, setIsloading] = useState(false);
 
-    console.log(payment);
-    console.log(cartItems);
 
-
-
-
-    // const { User } = useSelector((state) => state.AppUser.UserDetails);
+    const { isLoggedIN } = useSelector((state) => state.AppUser.UserDetails);
+    console.log(isLoggedIN);
 
     useEffect(() => {
         setIsloading(true);
@@ -40,6 +39,15 @@ function MockTest() {
             .then((res) => setCartItems(res.data))
             .catch((err) => console.error(err));
     }, []);
+
+    const hadnleBuyNowClick = (item) => {
+        if (isLoggedIN) {
+            setCheckpayment(item)
+        } else {
+            alert("You must be logged in");
+            navigate('/login')
+        }
+    }
 
 
     return (
@@ -91,7 +99,7 @@ function MockTest() {
                                                         </div>
                                                     </div>
                                                     <h5 className='pp'>${item.testPrice}</h5>
-                                                    <button className='buynow' onClick={() => setCheckpayment(item)}>Buy Now</button>
+                                                    <button className='buynow' onClick={() => hadnleBuyNowClick(item)}>Buy Now</button>
                                                 </div>
                                             )
                                         })}
@@ -120,7 +128,7 @@ function MockTest() {
 
                                                     </div>
                                                     <h5 className='pp'>${item.testPrice}</h5>
-                                                    <button className='buynow' onClick={() => setCheckpayment(item)}>Buy Now</button>
+                                                    <button className='buynow' onClick={() => hadnleBuyNowClick(item)}>Buy Now</button>
                                                 </div>
                                             )
                                         })}
@@ -149,7 +157,7 @@ function MockTest() {
                                                     <h4>{item.testTitle}</h4>
 
                                                     <h5 className='pp'>${item.testPrice}</h5>
-                                                    <button className='buynow' onClick={() => setCheckpayment(item)}>Buy Now</button>
+                                                    <button className='buynow' onClick={() => hadnleBuyNowClick(item)}>Buy Now</button>
 
 
                                                 </div>

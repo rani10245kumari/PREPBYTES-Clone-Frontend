@@ -33,7 +33,7 @@ function PAYMENT(pay) {
 
         );
         await axios.post(
-            "http://localhost:5000/pages/dashboardpush",
+            "https://prepbytes-clone-backend-mehz.onrender.com/pages/dashboardpush",
             pay
         );
 
