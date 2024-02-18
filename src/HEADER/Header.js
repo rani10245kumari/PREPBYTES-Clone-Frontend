@@ -26,7 +26,9 @@ function Header() {
     return (
         <div className='head-Main-Container'>
 
-            <img src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/navbar/logoPrepBytes.svg' alt='#' className='logo'></img>
+            <Link to='/'>
+                <img src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/navbar/logoPrepBytes.svg' alt='#' className='logo'></img>
+            </Link>
             <div className='header'>
 
 

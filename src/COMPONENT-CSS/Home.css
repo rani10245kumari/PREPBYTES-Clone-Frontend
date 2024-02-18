@@ -263,6 +263,10 @@
     min-height: 50vh;
 }
 
+.hhh {
+    display: none;
+}
+
 .grid-container-left {
     width: 35%;
     border: 2px solid red;
@@ -422,12 +426,124 @@
     width: 100%;
 }
 
-.bigposter {
-    align-items: center;
-    background: #bcf2fb;
+/* ================big poster================== */
+
+.homePage_KnowMetnor__posterContainer {
     display: flex;
+    align-items: center;
     justify-content: center;
-    padding: 2em 0 0;
+    background: #bcf2fb;
+    padding: 2em 0em 0em 0em;
+}
+
+.homePage_knowMentors__Poster {
+    object-fit: contain;
+    width: 100%;
+}
+
+.HomePageBottom__posterContainer {
+    width: 100%;
+    margin: 30px 0;
+}
+
+.Bottom_poster {
+    width: 95%;
+}
+
+/*===========mentors card=============*/
+
+.HomePage__PBMentors_CardContainer {
+    padding: 2em 0em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.PBMentors__TopCOntainer {
+    width: 100%;
+    padding: 1em 0em;
+    text-align: center;
+}
+
+.PBMentors__TopCOntainer_Heading {
+    color: #3e4041;
+    font-size: 3vw;
+    font-weight: 500;
+}
+
+.PBMentors__TopCOntainer_SecondaryHeading {
+    margin: 7px auto;
+    color: #858585;
+    font-size: 1.5vw;
+    width: 50%;
+}
+
+.PBMentors__BottomCOntainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 350px));
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+}
+
+.PB_mentorBottom_Cards {
+    width: 100%;
+    height: 400px;
+    background-color: #fff;
+    position: relative;
+    border-radius: 6px;
+    box-shadow: 0 3px 36px rgba(0, 0, 0, .1607843137254902);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 500px;
+    padding-bottom: 1em;
+}
+
+.MentorProfileBox {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.347);
+    padding-bottom: 1em;
+    position: relative;
+}
+
+.mentorProfile_coverImg {
+    width: 100%;
+}
+
+.mentorProfile_ProfileImage {
+    width: 120px;
+    position: absolute;
+    top: 45px;
+    left: 10px;
+}
+
+.mentorProfile_mentorName {
+    margin-top: 50px;
+    color: #424242;
+    font-weight: 600;
+    font-size: 18px;
+    margin-left: 15px;
+    text-transform: capitalize;
+}
+
+.mentorProfile_MentorPost {
+    font-size: 14px;
+    color: #858585;
+    margin-left: 15px;
+}
+
+.PB_mentorDesc {
+    padding: 0px 10px;
+    color: #4f4f53;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.PB_mentorCompany {
+    margin: 0px auto;
 }
 
 
@@ -631,9 +747,9 @@
 ------------------------------------------*/
     .grid-main-container {
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         justify-content: space-around;
-        background-color: #ebecec;
+        background-color: #f8fafa;
         min-height: 50vh;
     }
 
@@ -642,67 +758,111 @@
         border: 2px solid red;
     }
 
-    .grid-container-left h2 {
+    .hhh {
+        display: block;
         color: #3e4041;
-        font-size: 35px;
+        font-size: 28px;
         font-weight: 600;
         margin-bottom: 20px;
+        padding-left: 10px;
+    }
+
+    .grid-container-left h2 {
+        display: none;
     }
 
     .grid-left {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
         gap: 5vh;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
     }
 
     .grid-l {
-        height: 14vh;
-        width: 34vw;
-        background-color: white;
-        box-shadow: 0 3px 25px rgba(0, 0, 0, .10196078431372549);
-        border-radius: 5px;
+        height: 12vh;
+        width: 90%;
+        margin-left: 9%;
     }
 
     .grid-l img {
-        position: absolute;
-        height: 10vh;
-        margin-left: -30px;
+        height: 8vh;
+        margin-top: 2vh;
     }
 
     .grid-l p {
-        font-size: 16px;
-        width: 75%;
-        margin-left: 5vw;
-        color: #707070;
-        line-height: 1.6;
+        font-size: 14px;
+        margin-left: 15vw;
     }
 
     /*------------------------grid right container---------------*/
     .grid-container-right {
         display: flex;
-        border: 2px solid rgb(0, 255, 0);
-        width: 45%;
+        width: 100%;
     }
 
-    .grid-right-2 {
-        display: flex;
+
+    /*=============FOunder Container======================
+============================================*/
+    .founder {
         flex-direction: column;
+        gap: 5vh;
+        padding: 2em 0;
+        border: 2px solid green;
     }
 
-    /* .grid-right {
-    border: 2px solid rgb(5, 43, 10);
-} */
+    .founder-left {
+        min-height: 550px;
+        width: 90%;
+    }
 
-    .grid-right img {
+    .founder-left1 {
         height: 300px;
         width: 100%;
     }
 
-    #grid-r1 {
-        position: relative;
-        top: 20vh;
-        height: 280px;
+    .mamtaname {
+        font-size: 24px;
     }
+
+    .mamta2 {
+        font-size: 20px;
+    }
+
+    .founder-right {
+        width: 100%;
+        padding: 0 1em;
+    }
+
+    .founder-right h2 {
+        font-size: 7vw;
+    }
+
+    .founder-right h3 {
+        font-size: 6vw;
+        font-weight: 500;
+        margin: 1em 0 0.7em;
+        width: 80%;
+    }
+
+    .founder-konwmorebtn {
+        font-size: 18px;
+        font-weight: 500;
+        margin-top: 20px;
+        width: 180px;
+    }
+
+    .hrline {
+        border-width: 1px;
+        margin-top: 5vh;
+        width: 90%;
+    }
+
+    .bigposter {
+        align-items: center;
+        background: #bcf2fb;
+        display: flex;
+        justify-content: center;
+        padding: 2em 0 0;
+    }
+
 
 }
