@@ -864,5 +864,10 @@
         padding: 2em 0 0;
     }
 
+    /*==============mentors container=====================*/
+    .PBMentors__BottomCOntainer {
+        grid-template-columns: repeat(auto-fit, minmax(90%, 90%));
+    }
+
 
 }

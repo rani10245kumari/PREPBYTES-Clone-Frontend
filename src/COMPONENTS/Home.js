@@ -12,7 +12,8 @@ function Home() {
 
     useEffect(() => {
         setIsloading(true)
-        axios.get("https://prepbytes-clone-backend-mehz.onrender.com/mentors").then((response) => {
+        axios.get("https://prepbytes-clone-backend-mehz.onrender.com/pages/mentordatafind").then((response) => {
+            console.log(response)
             setMentors(response.data)
             setIsloading(false)
         })
@@ -264,26 +265,27 @@ function Home() {
                             <div className="PBMentors__TopCOntainer">
                                 <h2 className='PBMentors__TopCOntainer_Heading'>PrepBytes Mentors</h2>
                                 <p className='PBMentors__TopCOntainer_SecondaryHeading'>PrepBytes students get mentored by industry experts who have achieved in their careers and are passionate about helping students achieve their dream.</p>
+
+
+
                             </div>
+                            <div className="PBMentors__BottomCOntainer">
 
-
-                        </div>
-                        <div className="PBMentors__BottomCOntainer">
-
-                            {
-                                Mentors.map((mentor) => {
-                                    return <div className="PB_mentorBottom_Cards" key={mentor._id}>
-                                        <div className="MentorProfileBox">
-                                            <img src={mentor.mentorCoverPoster} alt="COver" className='mentorProfile_coverImg' />
-                                            <img src={mentor.mentorPfoile} alt="Profile" className='mentorProfile_ProfileImage' />
-                                            <p className="mentorProfile_mentorName">{mentor.mentorName}</p>
-                                            <p className="mentorProfile_MentorPost">{mentor.mentorPost}</p>
+                                {
+                                    Mentors.map((mentor) => {
+                                        return <div className="PB_mentorBottom_Cards" key={mentor._id}>
+                                            <div className="MentorProfileBox">
+                                                <img src={mentor.mentorCoverPoster} alt="COver" className='mentorProfile_coverImg' />
+                                                <img src={mentor.mentorPfoile} alt="Profile" className='mentorProfile_ProfileImage' />
+                                                <p className="mentorProfile_mentorName">{mentor.mentorName}</p>
+                                                <p className="mentorProfile_MentorPost">{mentor.mentorPost}</p>
+                                            </div>
+                                            <p className="PB_mentorDesc">{mentor.mentorDesc}</p>
+                                            <img src={mentor.mentorCompanyPoster} alt="CompanyLOGO" className='PB_mentorCompany' />
                                         </div>
-                                        <p className="PB_mentorDesc">{mentor.mentorDesc}</p>
-                                        <img src={mentor.mentorCompanyPoster} alt="CompanyLOGO" className='PB_mentorCompany' />
-                                    </div>
-                                })
-                            }
+                                    })
+                                }
+                            </div>
                         </div>
                     </div>
                 </>

@@ -11,7 +11,7 @@ function VideoTutorial() {
 
     useEffect(() => {
         setIsloading(true);
-        axios.get("http://localhost:5000/pages/videodatafind")
+        axios.get("https://prepbytes-clone-backend-mehz.onrender.com/pages/videodatafind")
             .then(response => { setData(response.data) })
         setIsloading(false);
 
