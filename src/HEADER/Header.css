@@ -282,35 +282,41 @@ a {
 /*=========================MEDIA QUERRY===================
 ===========================================*/
 
-@media screen and (max-width: 665px) {
+@media screen and (max-width: 765px) {
     .header {
         display: none;
     }
 
     .mobileNavbar__Container {
         display: block;
+        background-color: white;
+        width: 100%;
     }
 
     .head-Main-Container {
-        border: 2px solid red;
         display: flex;
         justify-content: space-between;
         width: 100%;
         position: sticky;
         z-index: 400;
         height: 15vh;
+        width: 100%;
     }
 
     .hampburger {
         display: block;
+        margin-right: 3vw;
+        margin-top: 4vh;
+        background-color: white;
     }
 
     .header__hamMenuButton {
-        font-size: 22px;
+        font-size: 28px;
         color: rgb(24, 107, 225);
         display: block;
         position: relative;
         cursor: pointer;
+
     }
 
 }

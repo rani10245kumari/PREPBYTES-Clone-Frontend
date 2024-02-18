@@ -12,7 +12,7 @@ function Home() {
 
     useEffect(() => {
         setIsloading(true)
-        axios.get("https://prepbytes-clone-backend-mehz.onrender.com/pages/mentordatafind").then((response) => {
+        axios.get("https://pb-clone.onrender.com/mentors").then((response) => {
             console.log(response)
             setMentors(response.data)
             setIsloading(false)

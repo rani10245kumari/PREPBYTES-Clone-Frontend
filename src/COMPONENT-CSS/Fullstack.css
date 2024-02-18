@@ -140,7 +140,7 @@
     width: 25vw;
 }
 
-.box3 h5 {
+.boxx3 h5 {
     font-size: 20px;
     text-align: center;
     letter-spacing: 0;
@@ -303,4 +303,219 @@
 .cont-5A p {
     color: rgba(106, 127, 134, .9294117647058824);
     text-align: center;
+}
+
+@media screen and (max-width: 765px) {
+    .container1-A {
+        display: flex;
+        flex-direction: column;
+        min-height: 60vh;
+        margin: 0px;
+        border: 2px solid green;
+    }
+
+    /*---------------------containerA- left side--------------*/
+    .container1-A-left {
+        width: 100%;
+        padding: 80px 0;
+        padding-left: 10px;
+    }
+
+    .container1-A-left p {
+        letter-spacing: .24px;
+        line-height: 1.6;
+    }
+
+    .container1-A-left img {
+        width: 200px;
+    }
+
+    .container1-A-left h1 {
+        font-size: 22px;
+        margin-top: 25px;
+        margin-bottom: 20px;
+        line-height: 1.6;
+    }
+
+    .prg {
+        margin-bottom: 25px;
+        font-size: 18px;
+    }
+
+    .buttn {
+        font-size: 16px;
+        width: 65%;
+    }
+
+    /*------------container1-A-rightside--------------------*/
+
+    .container1-A-right {
+        width: 100%;
+        position: absolute;
+        top: 80vh;
+        flex-direction: column;
+    }
+
+    .right-box {
+        width: 300px;
+        height: 8vh;
+        margin-left: 7vw;
+        top: 32vh;
+
+    }
+
+    .para2 {
+        font-size: 16px;
+        letter-spacing: 0;
+        color: #858585;
+    }
+
+    /*===========================CONTAINER2====================
+==============================*/
+    .container2 {
+        width: 100%;
+        flex-direction: column;
+        top: 55vh;
+        left: 0vw;
+    }
+
+    .radio {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 4vw;
+        width: 60%;
+    }
+
+    .radio1 {
+        box-shadow: 2px 2px 2px solid grey;
+        width: 100%;
+    }
+
+
+    .boxx3 h5 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .box3-A {
+        display: flex;
+        margin-bottom: 10px;
+    }
+
+    .box3-bttn {
+        min-width: 130px;
+        padding: 10px;
+        color: #fffaf0;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    .box3-bttn2 {
+        background: #00a5ec 0 0 no-repeat padding-box;
+        border-radius: 6px;
+        border: none;
+        font-size: 15px;
+        font-weight: 400;
+        letter-spacing: 0;
+        color: #f7f7f7;
+        min-width: 120px;
+        margin-left: 5%;
+        cursor: pointer;
+        padding: 10px;
+    }
+
+    /*==================CONTAINER3===================
+=============================*/
+    .containerr3 {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        position: relative;
+        top: 55vh;
+    }
+
+    .cont3-left {
+        width: 40%;
+        position: relative;
+        top: 20vh;
+    }
+
+    .cont3-left h4 {
+        color: rgba(10, 45, 71, .9294117647058824);
+        font-size: 28px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .cont3-left p {
+        text-align: center;
+        color: rgba(106, 127, 134, .9294117647058824);
+        line-height: 1.8;
+    }
+
+    .cont3-right {
+        width: 40%;
+    }
+
+    .cont3-right img {
+        width: 40vw;
+    }
+
+    /*--------------------------CONTAINER-4-------------
+-----------------------------*/
+    .containerr4 {
+        display: flex;
+        margin-top: 10vh;
+        position: relative;
+        top: 60vh;
+    }
+
+    .cont4-left {
+        width: 50%;
+        border: 2px solid blueviolet;
+    }
+
+    .cont4-left img {
+        width: 100%;
+    }
+
+    .cont4-right {
+        width: 50%;
+        padding: 50px;
+        background: #fff;
+    }
+
+    .cont4-right h5 {
+        color: rgba(10, 45, 71, .9294117647058824);
+        font-size: 30px;
+        margin-top: 10px;
+        margin-bottom: 90px;
+        text-align: center;
+    }
+
+    .cont4-right-A {
+        display: flex;
+        flex-direction: column;
+        gap: 4vh;
+        font-family: Poppins, sans-serif;
+        font-weight: 500;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .C4-right1 {
+        display: flex;
+        justify-content: space-evenly;
+        border: 2px solid green;
+        color: rgba(72, 55, 55, .9294117647058824);
+    }
+
+    .C4-right1 p {
+        width: 50%;
+    }
+
+
+
 }

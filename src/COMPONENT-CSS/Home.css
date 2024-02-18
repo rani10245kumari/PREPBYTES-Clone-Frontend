@@ -1,6 +1,6 @@
 .main {
     display: flex;
-
+    overflow-x: hidden;
 }
 
 .heading {
@@ -553,10 +553,9 @@
 ===========================================*/
 
 
-@media screen and (max-width: 665px) {
+@media screen and (max-width: 765px) {
 
     .main {
-        border: 2px solid green;
         flex-direction: column-reverse;
 
     }
@@ -596,7 +595,6 @@
 
     .brand {
         width: 100%;
-        border: 2px solid blue;
     }
 
     .brand img {
@@ -712,7 +710,6 @@
     }
 
     .cardMain {
-        border: 2px solid red;
         height: 46vh;
         position: relative;
         width: 15em;
@@ -755,7 +752,6 @@
 
     .grid-container-left {
         width: 100%;
-        border: 2px solid red;
     }
 
     .hhh {
@@ -806,7 +802,6 @@
         flex-direction: column;
         gap: 5vh;
         padding: 2em 0;
-        border: 2px solid green;
     }
 
     .founder-left {

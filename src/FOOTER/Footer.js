@@ -37,13 +37,10 @@ export default function Footer() {
                         POPULAR ARTICLES
                         <div className='para'>
                             <p>dd command linux</p>
-                            <p>ifconfig Command in Linux</p>
-                            <p>with Examples</p>
                             <p>pwd Command in Linux with</p>
                             <p>diff Command Linux</p>
                             <p>Examples</p>
-                            <p>Top Commandn in Linux with</p>
-                            <p>Examples</p>
+
                         </div>
                     </div>
                 </div>
