@@ -1,13 +1,52 @@
 import React, { useState } from 'react'
 import '../COMPONENT-CSS/Fullstack.css';
-import usePAYMENT from './usePayment'
+import { useSelector } from 'react-redux';
+import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 
 function Fullstack() {
-    const [checkpayment, setCheckpayment] = useState({});
+    const navigate = useNavigate()
+    const { User } = useSelector((state) => state.AppUser.UserDetails);
+    const { isLoggedIN } = useSelector((state) => state.AppUser.UserDetails);
+    console.log(isLoggedIN);
 
-    const payment = usePAYMENT(checkpayment);
-    console.log(payment);
+
+    const [tempData, setTempData] = useState({
+        "testID": 3,
+        "testImg": 'https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/homepage/master_competetive_pgm.webp',
+        "testTitle": "Full Stack Web Development",
+        "testCategory": 'Web-Development',
+        "testPrice": 30000,
+        "testDate": "1st May",
+        "userEmail": User.length > 0 ? User[0].userEmail : ""
+    });
+
+    const handleActiveOption = (batchDate) => {
+        setTempData({ ...tempData, "testDate": batchDate });
+    };
+
+
+
+    const handleBuyNow = async () => {
+        if (isLoggedIN) {
+            try {
+                await axios.post(
+                    "https://prepbytes-clone-backend-mehz.onrender.com/pages/dashboardpush",
+                    tempData // Passing tempData instead of the event
+                );
+                navigate('/paynow');
+            } catch (error) {
+                console.error('Error while posting data:', error);
+                // Handle error as needed
+            }
+        } else {
+            alert("You must be logged in");
+            navigate('/login');
+        }
+    };
+
+
 
     return (
         <div>
@@ -46,7 +85,7 @@ function Fullstack() {
                         <label >
                             <input type="radio" name="group1"></input>
                         </label>
-                        <span className='spn'>
+                        <span className='spn' onClick={(e) => handleActiveOption(e, "1st May")}>
                             <h5>1st May</h5>
                             <p>Enrolment Started</p>
                         </span>
@@ -56,7 +95,7 @@ function Fullstack() {
                         <label >
                             <input type="radio" name="group1"></input>
                         </label>
-                        <span className='spn'>
+                        <span className='spn' onClick={(e) => handleActiveOption(e, "15th May")}>
                             <h5>15th May</h5>
                             <p>Enrolment Started</p>
                         </span>
@@ -66,7 +105,7 @@ function Fullstack() {
                 <div className='boxx3'>
                     <h5>₹ 30000</h5>
                     <div className='box3-A'>
-                        <button className='box3-bttn' onClick={() => setCheckpayment({ testTitle: "Enroll", testPrice: 3000 })}>Enroll Now</button>
+                        <button className='box3-bttn' onClick={(e) => handleBuyNow(e)}>Enroll Now</button>
                         <button className='box3-bttn2'>Try for free</button>
                     </div>
                 </div>

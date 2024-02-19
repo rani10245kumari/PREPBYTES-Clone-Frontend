@@ -60,7 +60,7 @@ function Header() {
                     </div>
 
                     <div className='study-mat'>Project <span><i class="fa-solid fa-caret-down"></i></span>
-                        <div className='box2'>
+                        <div className='boxx2'>
                             <Link to='/project/html' className='video'>HTML</Link>
                             <Link to='/project/css' className='video'> CSS</Link>
                             <Link to='/project/javascript' className='video'>javascript</Link>

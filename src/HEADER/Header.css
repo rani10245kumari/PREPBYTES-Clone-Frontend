@@ -81,17 +81,17 @@ a {
     height: 18vh;
     width: 20vw;
     position: absolute;
-    top: 3vh;
+    top: 4.7vh;
     font-weight: bold;
     background-color: white;
     padding-left: 15px;
 }
 
-.box2 {
+.boxx2 {
     display: none;
 }
 
-.study-mat:hover .box2 {
+.study-mat:hover .boxx2 {
     background-color: white;
     display: block;
     display: flex;
@@ -102,8 +102,8 @@ a {
     min-height: 20vh;
     width: 12vw;
     position: absolute;
-    right: 5px;
-    top: 3.5vh;
+    right: 10vw;
+    top: 4.7vh;
     font-weight: bold;
     padding: 15px;
 }
