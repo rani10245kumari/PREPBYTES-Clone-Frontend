@@ -17,6 +17,7 @@ import Reactjs from '../COMPONENTS/PROJECT/React'
 import Node from '../COMPONENTS/PROJECT/Node'
 import Mongodb from '../COMPONENTS/PROJECT/Mongodb'
 import Dashboard from '../COMPONENTS/Dashboard'
+import PAYNOW from '../COMPONENTS/PAYNOW'
 function Routing() {
     return (
         <div>
@@ -39,6 +40,7 @@ function Routing() {
                 <Route path='/project/node' element={<Node></Node>}></Route>
                 <Route path='/project/mongodb' element={<Mongodb></Mongodb>}></Route>
                 <Route path='/dashboard' element={<Dashboard></Dashboard>}></Route>
+                <Route path='/paynow' element={<PAYNOW></PAYNOW>}></Route>
             </Routes>
 
         </div>

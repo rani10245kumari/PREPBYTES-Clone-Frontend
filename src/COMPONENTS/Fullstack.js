@@ -124,13 +124,36 @@ function Fullstack() {
                         <p>Almost Every Startup have a web app or mobile app.
                             Hundreds of growing startups or Early-stage startup keep looking for interns or web developers to help them convert their idea to reality.</p>
                     </div>
-                    <div className='cont-5A'>
-                        <h5>Growing Startups</h5>
-                        <p>Almost Every Startup have a web app or mobile app.
-                            Hundreds of growing startups or Early-stage startup keep looking for interns or web developers to help them convert their idea to reality.</p>
-                    </div>
+
                 </div>
             </div>
+
+            <div className='containerr6'>
+                <h2>Mentors & Instructors</h2>
+                <div className="FSP_Mentor_cardContainer">
+
+                    <div className="FSP_mentorCard">
+                        <img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/full-stack-course/Mamta.webp" alt="MentorPoster" className='FSP_mentorCard_Profile' />
+                        <p className="FSP_Mentorcard_mentorName">Mamta Kumari, Co-Founder PrepBytes</p>
+                        <p className="FSP_MentorCard__metnorEXP">Mamta has over 5 years of experience working in tech giants like Amazon and Samsung and has mentored more than 2000 students to help them enhance their coding skills. She is all set to guide you in your journey of web development</p>
+                    </div>
+
+                    <div className="FSP_mentorCard">
+                        <img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/full-stack-course/mentor_rahul.webp" alt="MentorPoster" className='FSP_mentorCard_Profile' />
+                        <p className="FSP_Mentorcard_mentorName">Rahul Dutta, Software Developer OLA</p>
+                        <p className="FSP_MentorCard__metnorEXP">Rahul has work experience of over 3 years and is currently working as Software Developer in OLA. Rahul has mentored many students in past and is excited about sharing his knowledge here.</p>
+                    </div>
+
+                    <div className="FSP_mentorCard">
+                        <img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/full-stack-course/mentor_harshita.webp" alt="MentorPoster" className='FSP_mentorCard_Profile' />
+                        <p className="FSP_Mentorcard_mentorName">Harshita Sharma, Product Engineer AskSid.ai</p>
+                        <p className="FSP_MentorCard__metnorEXP">Harshita is currently working in AskSid.ai and has worked in MindTree as Full Stack Developer. Apart from Web Development she also have experience in developing Voice-based Chatbots using Dialogflow from Google.</p>
+                    </div>
+                </div>
+
+
+            </div>
+
         </div>
     )
 }

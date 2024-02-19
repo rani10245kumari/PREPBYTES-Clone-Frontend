@@ -2,19 +2,14 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import '../COMPONENT-CSS/Mock-test.css';
 import Loader from './Loader';
-import usePAYMENT from './usePayment'
 import { useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom';
 
 
 function MockTest() {
-    const [checkpayment, setCheckpayment] = useState({});
+
     const navigate = useNavigate()
-    const payment = usePAYMENT(checkpayment);
-    console.log(payment)
     const [data, setData] = useState([]);
-    const [cartItems, setCartItems] = useState([]);
-    console.log(cartItems);
     const [isLoading, setIsloading] = useState(false);
 
 
@@ -34,18 +29,22 @@ function MockTest() {
             });
     }, []);
 
-    useEffect(() => {
-        axios.get("https://prepbytes-clone-backend-mehz.onrender.com/pages/getcartdata")
-            .then((res) => setCartItems(res.data))
-            .catch((err) => console.error(err));
-    }, []);
 
-    const hadnleBuyNowClick = (item) => {
+    const hadnleBuyNowClick = async (item) => {
         if (isLoggedIN) {
-            setCheckpayment(item)
+            try {
+                await axios.post(
+                    "https://prepbytes-clone-backend-mehz.onrender.com/pages/dashboardpush",
+                    item // Sending the item data along with the request
+                );
+                navigate('/paynow');
+            } catch (error) {
+                console.error('Error while posting data:', error);
+                // Handle error as needed
+            }
         } else {
             alert("You must be logged in");
-            navigate('/login')
+            navigate('/login');
         }
     }
 

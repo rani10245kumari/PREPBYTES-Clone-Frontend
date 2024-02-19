@@ -20,9 +20,9 @@ function MobileNav({ handleHideNav }) {
 
             <Link onClick={handleHideNav} to="/videotutorial" className='mobilenav__items'>Video Tutorial</Link>
 
-            <Link onClick={handleHideNav} to="/master-competitive-programming" className='mobilenav__items'> Full Stack Program</Link>
+            <Link onClick={handleHideNav} to="/FullStackProgram" className='mobilenav__items'> Full Stack Program</Link>
 
-            <Link onClick={handleHideNav} to="/FullStackProgram" className='mobilenav__items'>Master Competitive Programming</Link>
+            <Link onClick={handleHideNav} to="/MasterCompetitiveProgramming" className='mobilenav__items'>Master Competitive Programming</Link>
 
             <Link onClick={handleHideNav} to="/Elevation-Acdemy" className='mobilenav__items'>  Elevation Academy </Link>
 

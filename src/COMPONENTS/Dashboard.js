@@ -18,9 +18,10 @@ function Dashboard() {
     useEffect(() => {
         setIsloading(true)
         axios
-            .get('http://localhost:5000/pages/dashboardget')
+            .get('https://prepbytes-clone-backend-mehz.onrender.com//pages/dashboardget')
             .then((res) => setCartItems(res.data))
             .catch((err) => console.error(err));
+        console.log(setCartItems)
         setIsloading(false)
     }, []);
 
@@ -57,10 +58,13 @@ function Dashboard() {
                                             {cartItems.map((item) => {
 
                                                 return (
-                                                    <div>
-                                                        <p>{item.testID}</p>
-                                                        <p>{item.testTitle}</p>
-                                                        {/* <img src={item.testImg} alt='#' /> */}
+                                                    <div className='courseDetails__card' key={item._id}>
+
+                                                        <img src={item.testImg} className='CourseDetails_cardICON' alt='#' />
+                                                        <p className='card__itemText'>{item.testID}</p>
+                                                        <p className='card__itemText'>{item.testTitle}</p>
+                                                        <p className='card__itemText'>₹{item.testPrice}</p>
+
                                                     </div>
 
                                                 )

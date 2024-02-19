@@ -6,7 +6,7 @@ export default function Project() {
         <div>
             <div className='project-main'>
                 <h2 >
-                    <a href='http://localhost:3000/' className='proj-title'>PrepBytes Blog</a>
+                    <a href='https://friendly-piroshki-b25051.netlify.app/' className='proj-title'>PrepBytes Blog</a>
                 </h2>
                 <p className='top'>ONE-STOP RESOURCE FOR EVERYTHING RELATED TO CODING</p>
                 <div className='project-navbar'>

@@ -115,3 +115,78 @@
     color: #707070;
     margin: 15px;
 }
+
+/*=====================media querrry==================*/
+@media screen and (max-width: 765px) {
+    .upper-content {
+        height: 35vh;
+        padding: 20px;
+        font-size: 20px;
+    }
+
+    .upper-content p {
+        width: 95%;
+        font-size: 15px;
+    }
+
+    .featured-mock P {
+        font-size: 24px;
+        padding-left: 10px;
+    }
+
+    .featured-mock h2 {
+        text-align: center;
+        color: #ffa000;
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    .feattured-mock-test {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        min-height: 50vh;
+        gap: 4vw;
+        flex-wrap: wrap;
+    }
+
+    .image-m {
+        height: 10vh;
+        width: 13vw;
+    }
+
+    .mock1 h4 {
+        color: #3969ad;
+        font-weight: 500;
+        font-size: 17px;
+    }
+
+    .mock-details {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .mock-details p {
+        color: #707070;
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    .mock-d {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .pp {
+        font-size: 16px;
+        color: blueviolet;
+    }
+
+    .companywise {
+        width: 11em;
+        padding: 15px;
+        margin: 15px;
+    }
+
+}

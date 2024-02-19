@@ -1,5 +1,6 @@
 .master-main {
     background-color: #f8fafa;
+    height: auto;
 }
 
 .master {
@@ -39,8 +40,7 @@
 .right {
     width: 40%;
     display: flex;
-    position: relative;
-    top: 5vh;
+    margin-top: 5vh;
     height: 100%;
     justify-content: center;
     align-items: center;
@@ -63,7 +63,9 @@
 
 /*========================container2==================*/
 
-.container2 {
+.container-2 {
+    margin: auto;
+    margin-top: 10px;
     border: 2px solid palevioletred;
     display: flex;
     justify-content: space-around;
@@ -72,8 +74,7 @@
     box-sizing: border-box;
     color: #2e2e2e;
     width: 85%;
-    position: relative;
-    left: 7vw;
+
     padding: 0rem 32px;
     box-sizing: border-box;
 
@@ -127,7 +128,7 @@
 
 /*---------------------------container3------------------
 --------------------------------*/
-.container3 {
+.container-3 {
 
     display: flex;
     flex-direction: column;
@@ -137,7 +138,7 @@
     border: 2px solid black;
 }
 
-.container3 h5 {
+.container-3 h5 {
     width: 100%;
     text-align: center;
     color: #151414;
@@ -145,7 +146,7 @@
     font: normal normal 500 1.75rem/2rem Inter;
 }
 
-.container3 p {
+.container-3 p {
     font: normal normal 400 1.4rem/2rem Inter;
     color: #151414;
     /* margin: 1rem 0rem;
@@ -431,56 +432,100 @@ ul {
 
 /*===========================CONTAINER-8============
 ============================================*/
-.container8 {
-    margin-top: 5vh;
+.batchSelectionContainer {
+    padding: 2em 0em;
+    border-top: 2px solid #423c3c5e;
+    border-bottom: 2px solid #423c3c6c;
     width: 100%;
-    border-top: 0.5px solid #c2c2c2;
-    border-bottom: 0.5px solid #c2c2c2;
-    padding: 3rem 0;
-    box-sizing: border-box;
-}
-
-.box8 {
-    /* max-width: 1366px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 5px;
-    padding: 5px 0 0; */
+    min-height: 350px;
+    margin: 10px 0px;
     display: flex;
     align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
-.box8 h4 {
-    /* margin-left: 10px;
-    width: 9rem; */
-    font: normal normal 400 1.1rem/1.5rem Inter;
-    margin-left: 10vw;
+.SelectBatchText {
+    font-weight: 400;
+    font-size: 1.5vw;
+    text-transform: uppercase;
+    width: 200px;
+    text-align: center;
 }
 
-.box8a {
+.batchSelection__option {
+    user-select: none;
+    width: 250px;
+    height: 100px;
+    color: #1b7ed8;
+    background: #fff 0 0 no-repeat padding-box;
+    box-shadow: 0 0 5px rgba(37, 37, 37, .1607843137254902);
+    border-radius: 5px;
+    border-bottom: 5px solid #00a6eb;
     display: flex;
-    justify-content: space-evenly;
-    gap: 5vw;
-    width: 70%;
-    border: 2px solid red;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 2em;
+    gap: 10px;
 }
 
-.box8a-1 {
+.batchSelection__option:hover {
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1607843137254902);
+}
+
+.batchStartingDate {
+    color: #1b7ed8;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.bathStartingDate_text {
+    color: #031e4d;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.batchPriceContainer {
+    width: 220px;
+    height: 200px;
     display: flex;
-    justify-content: space-evenly;
-    gap: 3vw;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
 }
 
-.box8a-1A {
+.batchPrice_text {
+    font-weight: 600;
+    font-size: 2vw;
+    color: #08a2eb;
+}
+
+.batchSelection__SelectedOption {
     color: #fff;
-    background: #00a6eb 0 0 no-repeat padding-box;
+    background: #00a6eb;
     box-shadow: 0 0 10px rgba(37, 37, 37, .1607843137254902);
     border: 1px solid #00a3e6;
     border-radius: 5px;
-    height: 16vh;
-    width: 15vw;
-    font-size: 14px;
 }
+
+.batchSelection__SelectedOption:hover {
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1607843137254902);
+}
+
+
+.batchSelection__SelectedOption .batchStartingDate,
+.batchSelection__SelectedOption .bathStartingDate_text {
+    color: white;
+}
+
+
+
+
 
 /*===============================container9================
 =====================================*/
@@ -542,4 +587,105 @@ ul {
 .one {
     border-bottom: 4px solid #df3897;
     border-right: 4px solid #df3897;
+}
+
+/*===========================MEDAIA QUERRY============================
+===================================*/
+@media screen and (max-width: 765px) {
+
+    /*---------------container1--------------------*/
+
+
+    .master {
+        margin-top: 5px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .left h2 {
+        width: 100%;
+        font-size: 1.5rem;
+    }
+
+    .left p {
+        width: 90%;
+    }
+
+    .left span {
+        font-size: 1rem;
+    }
+
+    .right {
+        width: 100%;
+        margin-top: 1vh;
+        height: 100%;
+    }
+
+    .right img {
+        width: 98%;
+    }
+
+    /*========================container2==================*/
+
+    .container-2 {
+        width: 100%;
+        flex-direction: column;
+        gap: 3vh;
+    }
+
+    .enrol1 {
+        width: 99%;
+    }
+
+    /*---------------------------container3------------------
+--------------------------------*/
+    .container-3 {
+        width: 100%;
+
+    }
+
+    .container-3 h5 {
+        width: 100%;
+        font: normal normal 500 1.2rem/2rem Inter;
+    }
+
+    .container-3 p {
+        font: normal normal 400 1.0rem/2rem Inter;
+    }
+
+    /*==============mentor==============*/
+    .mentor-main {
+        display: flex;
+        flex-direction: column;
+        gap: 3vh;
+    }
+
+    .mentor-sub {
+        width: 100%;
+        gap: 4vw;
+    }
+
+    .mentr {
+        height: 10vh;
+        width: 15.5vw;
+    }
+
+    .descriptn h3 {
+        font: normal normal 600 1.0rem/1.25rem Inter;
+    }
+
+    .descriptn p {
+        font-size: 16px;
+    }
+
+    .company {
+        height: 5vh;
+    }
+
+
 }
