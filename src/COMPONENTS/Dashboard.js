@@ -18,7 +18,7 @@ function Dashboard() {
     useEffect(() => {
         setIsloading(true)
         axios
-            .get('https://prepbytes-clone-backend-mehz.onrender.com//pages/dashboardget')
+            .get('https://prepbytes-clone-backend-mehz.onrender.com/pages/dashboardget')
             .then((res) => setCartItems(res.data))
             .catch((err) => console.error(err));
         console.log(setCartItems)
