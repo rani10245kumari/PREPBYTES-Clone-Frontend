@@ -15,9 +15,6 @@ function Login() {
     const [Message, setMessage] = useState({ "msgVal": "" });
 
 
-    // const userData = useSelector(state => state.AppUser.UserDetails);
-    // console.log(userData)
-
 
     const [userDetails, setUserDetails] = useState({
         "userEmail": "",
