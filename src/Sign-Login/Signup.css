@@ -12,14 +12,13 @@
     display: flex;
     padding-top: 100px;
     padding-bottom: 80px;
-    border: 2px solid red;
     gap: 1vw;
 }
 
 .back-img {
-    width: 60%;
+    width: 58%;
+    height: 100vh;
     margin-left: 5vw;
-    border: 2px solid white;
 }
 
 .register-left2 {
@@ -65,9 +64,11 @@
     margin: 100px 40px 13%;
     padding: 0 10px;
     background-color: #fffffe;
+    width: 30vw;
 }
 
 .reg-right1 {
+
     height: 75px;
     background: #fff;
     margin: 0 3%;
@@ -91,11 +92,6 @@
 .reg-right2 {
     padding: 14px 50px 40px;
 }
-
-
-
-
-
 
 .userLOGINFORM_Heading {
     color: #767779;
@@ -188,4 +184,53 @@
     text-align: center;
     margin-top: 10px;
     margin-bottom: 20px;
+}
+
+@media screen and (max-width:765px) {
+    .register {
+        flex-direction: column;
+    }
+
+    .register-left {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        padding-top: 20px;
+        padding-bottom: 1vh;
+    }
+
+    .back-img {
+        display: none;
+    }
+
+    .register-left2 {
+        width: 99%;
+    }
+
+    .register-left3 {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-evenly;
+        color: #423c3c;
+    }
+
+    .logo1 {
+        width: auto !important;
+        height: 50px !important;
+    }
+
+    .register-left3 h5 {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: -7px;
+    }
+
+    /*--------------------register-right--------*/
+    .register-right {
+        margin: 20px 0px 1%;
+        padding: 0 0px;
+        width: 99.6%;
+    }
+
+
 }
