@@ -38,7 +38,6 @@
 }
 
 .mock1 {
-    border: 2px solid red;
     width: 17em;
     /* padding: 10px; */
     background: transparent linear-gradient(180deg, #e0ebf9, #fff 54%, #fff) 0 0 no-repeat padding-box;
@@ -188,5 +187,51 @@
         padding: 15px;
         margin: 15px;
     }
+}
+
+@media screen and (min-width:766px) and (max-width:998px) {
+    .upper-content {
+        height: 22vh;
+    }
+
+    .upper-content p {
+        width: 94%;
+        font-size: 20px;
+    }
+
+    .featured-mock P {
+        font-size: 32px;
+        padding-left: 3vw;
+    }
+
+    .featured-mock h2 {
+        font-size: 28px;
+    }
+
+    .feattured-mock-test {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        min-height: 40vh;
+        gap: 4vw;
+        flex-wrap: wrap;
+    }
+
+    .mock-details p {
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    .mock-d {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .pp {
+        font-size: 17px;
+        color: blueviolet;
+    }
+
 
 }
