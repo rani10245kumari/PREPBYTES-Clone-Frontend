@@ -47,7 +47,6 @@
 }
 
 .v-tutorial {
-    border: 2px solid red;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -57,7 +56,6 @@
 }
 
 .flex-item {
-    border: 2px solid green;
     width: 25vw;
     min-height: 400px;
     background: #fff 0 0 no-repeat padding-box;
@@ -143,7 +141,44 @@
         height: 40vh;
     }
 
+}
 
+@media screen and (min-width:766px) and (max-width:995px) {
 
+    .video-right img {
+        width: 99%;
+    }
+
+    .video-top h4 {
+        font-size: 26px;
+    }
+
+    .video-top p {
+        font-size: 16px;
+    }
+
+    .category {
+        font-size: 28px;
+    }
+
+    .flex-item {
+        width: 28vw;
+        min-height: 360px;
+    }
+
+    .flex-item img {
+        width: 94%;
+        height: 23vh;
+    }
+
+    .flex-item h4 {
+        font-size: 19px;
+        padding-left: 15px;
+    }
+
+    .flex-item h5 {
+        margin-top: 7px;
+        font-size: 16px;
+    }
 
 }
