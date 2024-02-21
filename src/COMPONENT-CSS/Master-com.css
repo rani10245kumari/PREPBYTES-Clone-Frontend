@@ -687,5 +687,210 @@ ul {
         height: 5vh;
     }
 
+    /*==============================container-4------------------
+-----------------------------------------*/
+
+    .cont4 {
+        border: 1px solid rebeccapurple;
+        display: flex;
+        flex-direction: column;
+        gap: 2vw;
+    }
+
+    .contain4-sub {
+        flex-direction: column;
+        padding: 28px;
+        justify-content: space-evenly;
+    }
+
+    .C4-1 {
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100%;
+    }
+
+    .bb {
+        direction: unset;
+        margin-left: 25px;
+    }
+
+    .C4-1 p {
+        font-size: 13px;
+    }
+
+    .C4-2 {
+        display: flex;
+        width: 100%;
+    }
+
+
+    .C4-2 p {
+        font-size: 14px;
+    }
+
+    .cir {
+        height: 10vh;
+        width: 20vw;
+        border-radius: 50%;
+        left: 1vw;
+    }
+
+    .cir2 {
+        height: 10vh;
+        width: 20vw;
+        right: 0vw;
+
+    }
+
+    .middle-img {
+        display: none;
+    }
+
+    /*===============================CONTAINER-5=========
+======================================*/
+    .container5 {
+        flex-direction: column;
+        gap: 1vh;
+    }
+
+    .container5 h1 {
+        color: #00a6eb;
+        font: normal normal 700 2.75rem/1rem Inter;
+    }
+
+    .container5 p {
+        font-weight: 400;
+    }
+
+    /*======================CONTAINER-6================
+================================*/
+    .container6 {
+        font-size: 16px;
+    }
+
+    .container6 img {
+        width: 99%;
+    }
+
+    /*=========================container7===========
+==================================*/
+    .box7 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-left: 0vw;
+        gap: 2vh;
+    }
+
+    .box7a {
+        display: flex;
+        flex-direction: column;
+        width: 99.8%;
+        gap: 5vh;
+
+    }
+
+
+    .box7b {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0rem 3rem;
+        height: 100%;
+        box-shadow: 0px 2px 8px rgba(156, 154, 154, .1607843137);
+        border-radius: 10px;
+
+    }
+
+    ul {
+        height: 30vh;
+        width: 100%;
+        list-style: none;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        scrollbar-color: skyblue;
+    }
+
+    /*--------------------container-8---------*/
+    .SelectBatchText {
+        font-weight: 400;
+        font-size: 22px;
+    }
+
+    .batchPrice_text {
+        font-weight: 600;
+        font-size: 30px;
+        color: #08a2eb;
+    }
+
+    .batchSelection__SelectedOption {
+        color: #fff;
+        background: #00a6eb;
+        box-shadow: 0 0 10px rgba(37, 37, 37, .1607843137254902);
+        border: 1px solid #00a3e6;
+        border-radius: 5px;
+    }
+
+    /*===============================container9================
+=====================================*/
+    .container9 {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 3rem 1rem;
+        box-sizing: border-box;
+        min-height: 22rem;
+        max-width: 1147px;
+        margin: 3rem auto;
+    }
+
+    .container9 h5 {
+        color: #3f3c3c;
+        font: normal normal 500 1.75rem/3rem Inter;
+        margin-bottom: 3rem;
+        display: block;
+    }
+
+    .cont9-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 1rem;
+        box-sizing: border-box;
+        font: normal normal 700 1rem/1.5rem Inter;
+        gap: 2vw;
+    }
+
+    .cont9-2 {
+        width: 100%;
+        gap: 3vh;
+    }
+
+    .cont9-2A {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0.5rem;
+        border-radius: 5px;
+        width: 99%;
+        gap: 1 vvw;
+
+    }
+
+
+
+    .one {
+        border-bottom: 4px solid #df3897;
+        border-right: 4px solid #df3897;
+    }
+
+    .two {
+        margin-left: 0vw;
+    }
+
+    .three {
+        margin-right: 0vw;
+    }
 
 }

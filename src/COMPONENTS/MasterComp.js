@@ -179,7 +179,7 @@ function MasterComp() {
                             <div className='cir2'>
                                 <img src='/images/tb-5.webp' alt='#'></img>
                             </div>
-                            <div>
+                            <div className='bb'>
                                 <h4>Personalised Program</h4>
                                 <p>Master your skills from where you are,
                                     with India's only personalised program</p>
@@ -190,7 +190,7 @@ function MasterComp() {
                             <div className='cir2'>
                                 <img src='/images/tb-6.webp' alt='#'></img>
                             </div>
-                            <div>
+                            <div className='bb'>
                                 <h4>Personalised Program</h4>
                                 <p>Master your skills from where you are,
                                     with India's only personalised program</p>
@@ -201,7 +201,7 @@ function MasterComp() {
                             <div className='cir2'>
                                 <img src='/images/tb-7.webp' alt='#'></img>
                             </div>
-                            <div>
+                            <div className='bb'>
                                 <h4>Personalised Program</h4>
                                 <p>Master your skills from where you are,
                                     with India's only personalised program</p>
@@ -211,7 +211,7 @@ function MasterComp() {
                             <div className='cir2'>
                                 <img src='/images/tb-5.webp' alt='#'></img>
                             </div>
-                            <div>
+                            <div className='bb'>
                                 <h4>Personalised Program</h4>
                                 <p>Master your skills from where you are,
                                     with India's only personalised program</p>
@@ -262,13 +262,19 @@ function MasterComp() {
                             <li className='subtopic'>Logic Building</li>
                             <li className='subtopic'>Data Types</li>
                             <li className='subtopic'>Loops and Condition</li>
-                            <li className='subtopic'></li>
-                            <li className='subtopic'></li>
-                            <li className='subtopic'></li>
-                            <li className='subtopic'></li>
-                            <li className='subtopic'></li>
-                            <li className='subtopic'></li>
-                            <li className='subtopic'></li>
+                            <li className='subtopic'>Pattern Programming</li>
+                            <li className='subtopic'>Operators and Expressions</li>
+                            <li className='subtopic'>Input/Output</li>
+                            <li className='subtopic'>Functions</li>
+                            <li className='subtopic'>Functions and OOPs(Python)</li>
+                            <li className='subtopic'>Pointers(C/C++)</li>
+                            <li className='subtopic'>Structures</li>
+                            <li className='subtopic'>Character Arrays and Strings</li>
+                            <li className='subtopic'>Recursion</li>
+                            <li className='subtopic'>Bit Manipulation</li>
+                            <li className='subtopic'>STLs(C++)</li>
+                            <li className='subtopic'>Collections (Java)</li>
+                            <li className='subtopic'>Set, List, Tuples, Dictionary(Python)</li>
                         </ul>
                     </div>
                 </div>
