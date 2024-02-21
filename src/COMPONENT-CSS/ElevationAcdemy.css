@@ -621,3 +621,222 @@
     font-weight: 600;
     cursor: pointer;
 }
+
+/*============================MEADIA QUERRY=============================
+============================================================*/
+@media screen and (max-width:765px) {
+
+    .elevation1 {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        margin-left: 0vw;
+    }
+
+    .elevation1-left {
+        width: 100%;
+        padding: 20px 20px;
+    }
+
+    .para {
+        width: 95%;
+        line-height: 1.6;
+    }
+
+    .ele1-button {
+        display: flex;
+        flex-direction: column;
+        gap: 3vh;
+        padding: 0px;
+        justify-content: space-evenly;
+    }
+
+    .ele1-buttonA {
+        width: 90%;
+
+    }
+
+    .ele1-buttonB {
+        width: 90%;
+    }
+
+    .elevation1-right {
+        width: 100%;
+    }
+
+    .elevation1-right img {
+        margin-top: 10vh;
+        width: 100%;
+    }
+
+    /*------------------elevation2-------------*/
+    .elevation2 {
+        max-width: 100%;
+        background: #e5f4fb 0 0 no-repeat padding-box;
+    }
+
+    .elevation-2 {
+        display: flex;
+        flex-direction: column;
+        padding-top: 15px;
+        padding-bottom: 5px;
+    }
+
+    .ele2-left {
+        width: 100%;
+    }
+
+    .ele2-left h5 {
+        font-size: 20px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        text-align: center;
+    }
+
+
+    .ele2-right {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .EA_Batch__SessionInforContainer {
+        width: calc(100% - 9%);
+        min-height: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0em 1em;
+    }
+
+    .EA_Batch_SessionBox {
+        min-height: 150px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .Ea_SessionBoxTitle {
+        color: #095170;
+        font-size: 6vw;
+        font-weight: 600;
+    }
+
+    .Ea_session_date {
+        font-size: 12px;
+        background: #d6f3ff;
+        border: 0.5px dashed #00a5ec;
+        border-radius: 6px;
+        text-align: center;
+        color: #424242;
+        padding: 0.3em;
+
+    }
+
+    .Ea_batch_SessionIconContainer {
+        position: relative;
+    }
+
+    .Ea_batch_SessionIconContainer:nth-child(1)::after {
+        content: "";
+        position: absolute;
+        height: 2px;
+        background: transparent linear-gradient(90deg, #00a5ec, #99e0ff);
+        position: absolute;
+        top: 28px;
+        left: 100%;
+        width: 15vw;
+    }
+
+    /*--------------------container3------------------------*/
+    .elevation3 {
+        display: none;
+    }
+
+    /*========================ELEVATION4===========
+----------------------------*/
+    .elevation4 h2 {
+        letter-spacing: 0;
+        color: #3e4041;
+        width: 90%;
+        font-size: 30px;
+    }
+
+    .ele4-cards {
+        width: 99%;
+
+    }
+
+    .ele4-cards img {
+        width: 14vw;
+        padding: 15px;
+    }
+
+    /*-----------------------Elevation5---------
+------------------------------*/
+    .EA_ProgramSyllabus_MainContainer {
+        min-height: 50vh;
+        width: 90%;
+    }
+
+    .EA_ProgramSyllabus__Mainheading {
+        font-size: 20px;
+    }
+
+    .EA_ProgramSyllabus__Secondaryheading {
+        font-size: 14px;
+        width: 95%;
+    }
+
+    .EA_ProgramSyllabus_Container_heading {
+        font-size: 16px;
+    }
+
+    .EA_programSyllabus_topic {
+        font-size: 10px;
+        font-weight: 500;
+        color: #292626;
+    }
+
+    /*==================ELEVATION6=====================
+=====================================*/
+    .elevation6 {
+        background: #fdf0d7;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ele6-left {
+        padding: 50px;
+    }
+
+    .ele6-left p {
+        font-size: 22px;
+        color: #424242;
+        margin-bottom: 10px;
+        width: 100%;
+        font-weight: 600;
+        line-height: 1.4;
+    }
+
+    .ele6-left button {
+        border-radius: 4px;
+        border: none;
+        padding: 10px 16px;
+        background: #f78077;
+        color: #f7f7f7;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+
+
+
+}
