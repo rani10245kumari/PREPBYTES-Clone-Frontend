@@ -9,6 +9,10 @@
     width: 50%;
 }
 
+.html-left img {
+    width: 100%;
+}
+
 .html-right {
     width: 28%;
 }
@@ -30,4 +34,46 @@
     font-size: 22px;
     color: white;
     padding-top: 1vh;
+}
+
+@media screen and (max-width:765px) {
+    .html-main {
+        margin-top: 5vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 5vw;
+    }
+
+    .html-left {
+        width: 100%;
+    }
+
+    .html-left img {
+        width: 100%;
+    }
+
+    .html-right {
+        width: 100%;
+    }
+
+    .html-right h3 {
+        text-align: center;
+        font-size: 26px;
+        color: seagreen;
+        border-bottom: 2px solid lightseagreen;
+    }
+
+    .html-right2 p {
+        background-color: lightseagreen;
+        height: 8vh;
+        width: 80%;
+        margin-left: 8vw;
+        border-radius: 10px;
+        text-align: center;
+        justify-content: center;
+        font-size: 22px;
+        color: white;
+        padding-top: 1vh;
+    }
 }

@@ -6,9 +6,6 @@
     display: block;
 }
 
-
-
-
 .proj-title {
     font-size: 34px;
     font-weight: 700;
@@ -29,7 +26,7 @@
 
 .project-navbar {
     display: flex;
-    width: 100%;
+    width: 95.1%;
     background-color: #fff;
     justify-content: center;
     align-items: center;
@@ -38,4 +35,25 @@
     padding: 5vh;
     border-bottom: 2px solid #3e404170;
     font-size: 22px;
+}
+
+@media screen and (max-width:765px) {
+    .proj-title {
+        font-size: 24px;
+        padding-left: 4vw;
+    }
+
+    .top {
+        font-size: 14px;
+        padding-left: 4vw;
+    }
+
+    .project-navbar {
+        width: 94%;
+        gap: 5vw;
+        font-weight: 500;
+        padding: 2vh;
+        border-bottom: 2px solid #3e404170;
+        font-size: 12px;
+    }
 }
